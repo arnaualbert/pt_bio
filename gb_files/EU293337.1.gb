@@ -1,0 +1,56 @@
+LOCUS       EU293337                 579 bp    RNA     linear   VRL 26-JUL-2016
+DEFINITION  Kyasanur forest disease virus isolate W6204 NS5 gene, partial cds.
+ACCESSION   EU293337
+VERSION     EU293337.1
+KEYWORDS    .
+SOURCE      Kyasanur Forest disease virus
+  ORGANISM  Kyasanur Forest disease virus
+            Viruses; Riboviria; Orthornavirae; Kitrinoviricota; Flasuviricetes;
+            Amarillovirales; Flaviviridae; Flavivirus.
+REFERENCE   1  (bases 1 to 579)
+  AUTHORS   Mehla,R., Kumar,S.R., Yadav,P., Barde,P.V., Yergolkar,P.N.,
+            Erickson,B.R., Carroll,S.A., Mishra,A.C., Nichol,S.T. and
+            Mourya,D.T.
+  TITLE     Recent ancestry of Kyasanur Forest disease virus
+  JOURNAL   Emerging Infect. Dis. 15 (9), 1431-1437 (2009)
+   PUBMED   19788811
+REFERENCE   2  (bases 1 to 579)
+  AUTHORS   Mehla,R., Kumar,S.R.P., Yadav,P., Barde,P.V., Yergolkar,P.N.,
+            Nichol,S.T. and Mourya,D.T.
+  TITLE     Molecular Characterization of Kyasanur Forest Disease Virus
+            Isolates in India and Development of Diagnostic RT PCR
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 579)
+  AUTHORS   Mehla,R., Kumar,S.R.P., Yadav,P., Barde,P.V., Yergolkar,P.N.,
+            Nichol,S.T. and Mourya,D.T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-NOV-2007) Virus Repository and High Containment Lab.,
+            National Institute of Virology, Microbial Containment Complex,
+            130/1, Sus Road, Pashan, Pune, Maharashtra 411021, India
+FEATURES             Location/Qualifiers
+     source          1..579
+                     /organism="Kyasanur Forest disease virus"
+                     /mol_type="genomic RNA"
+                     /isolate="W6204"
+                     /db_xref="taxon:33743"
+     CDS             <1..>579
+                     /codon_start=1
+                     /product="NS5"
+                     /protein_id="ABX89548.1"
+                     /translation="ITRRDQRGSGQVVTYALNTLTNIKVQLIRMMEGEGVIGPSDSQD
+                     PRLLRVEAWLKEHGEERLTRMLVSGDDCVVRPIDDRFGKALYFLNDMAKVRKDIGEWE
+                     PSEGYSSWEEVPFCSHHFHELTMKDGRVIIVPCRDQDELVGRARVSPGCGWSVRETAC
+                     LSKAYGQMWLLSYFHRRDLRTLGLAICSAVPID"
+ORIGIN      
+        1 ataaccagaa gagaccaacg tggttcaggc caggtggtga cctacgctct aaacaccctc
+       61 acgaacatca aggtgcagct tatccgcatg atggagggag agggcgtgat cgggccatct
+      121 gactcacagg acccgcgact cctacgtgtg gaagcctggc tgaaagagca tggagaggag
+      181 cgcctgaccc gcatgctggt cagtggggat gattgcgttg tgagaccaat tgacgaccgc
+      241 ttcgggaagg ccctctactt cctaaatgac atggccaagg tgagaaagga cattggagag
+      301 tgggagccct cagaaggtta ctccagctgg gaggaggtcc ctttttgttc ccaccatttc
+      361 catgagttga cgatgaagga tggcagggtc ataatcgtcc catgcagaga ccaagatgag
+      421 ttggtggggc gggcaagagt gtcacctggg tgtggctgga gcgttaggga aacagcatgt
+      481 ctctcaaagg cctatggaca gatgtggctg ctgagctact tccacaggag ggacctgagg
+      541 acgctcggcc tggcaatctg ctcagctgtg cccattgat
+//
+

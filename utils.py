@@ -15,7 +15,7 @@ from   pygments.formatters.terminal256 import Terminal256Formatter
 
 # Entrez Global Config
 # ---------------------------------------------------------------------
-Entrez.email = "arnaualbert2003@gmail.com"
+Entrez.email = "carde602@gmail.com"
 assert Entrez.email != "", "Write your email address before using Entrez."
 # ---------------------------------------------------------------------
 
@@ -42,26 +42,131 @@ def request_search(db: str, term: str, retmax: int, xml_filename: str):
 
     if Path(xml_filename).exists(): return
 
-    with Entrez.esearch( db=db,
-                         term=term,
-                         retmax=retmax ) as response:
+    with Entrez.esearch( db     = db,
+                         term   = term,
+                         retmax = retmax,
+                         idtype = "acc"  ) as response:
 
         xml_bytes: bytes = response.read()
 
     write_xml(xml_bytes, xml_filename)
 
 
+# ---------------------------------------------------------------------
+def request_fetch(  db:          str,
+                    id:          Union[str, list[str], set[str]],
+                    file_format: str,
+                    filename:    str  ):
+    """ This function writes plain text in the type you specify.
+        Typical types: 'fasta', 'gb', etc.
+        SHOULD BE USED TO DOWNLOAD ONLY ONE OR A FEW FILES.
+    """
+
+    if Path(filename).exists(): return
+
+    with Entrez.efetch( db      = db,
+                        id      = id,
+                        rettype = file_format,
+                        retmode = "text",
+                        idtype  = "acc"        ) as response:
+
+        content: str = response.read()
+
+    write_text(content, filename)
 
 
 # ---------------------------------------------------------------------
-# XML Functions
+def _request_batch( db:          str,
+                    webenv:      str,
+                    query_key:   str,
+                    start:       int,
+                    batch_size:  int,
+                    file_format: str,
+                    filename:    str  ):
+    """ Internal function used by request_multi_fetch().
+        Do not call it directly.
+        This function writes plain text in the type you specify.
+        Typical types: 'fasta', 'gb', etc. 
+        Should be used to download only a few files.
+    """
+
+    with Entrez.efetch( db        = db,
+                        webenv    = webenv,
+                        query_key = query_key,
+                        idtype    = "acc",
+                        retstart  = start,
+                        retmax    = batch_size,
+                        rettype   = file_format,
+                        retmode   = "text"       ) as response:
+
+        content: str = response.read()
+
+    with Path(filename).open('a') as output_file:
+        output_file.write(content)
+
+
 # ---------------------------------------------------------------------
+def request_multi_fetch( db:           str,
+                         id_list:      Union[list[str], set[str]],
+                         batch_size:   int,
+                         file_format:  str,
+                         filename:     str                        ):
+    """ Downloads files in batches from NCBI.
+        Use it to download large quantities of files or very big files.
+        Adjust batch_size to something reasonable.
+        id_list must be a list or a set. A single id string won't work!
+    """
+
+    if Path(filename).exists(): return
 
 
-# Write xml as a bytes string to a file in disk.
-# - Makes the parent dirs, if they don't exist.
-# - Overwrites existing files.
-# This function is meant to be used with Entrez's xml responses.
+    # Post IDs
+    id_list_str: str = ','.join(id_list)
+
+    with Entrez.epost(  db=db,
+                        id=id_list_str ) as response:
+        
+        post_id: DictionaryElement = Entrez.read(response)
+        webenv:                str = post_id['WebEnv']
+        query_key:             str = post_id['QueryKey']
+
+
+    # Retrieve contents
+    start: int = 0
+    stop:  int = len(id_list)
+    step:  int = batch_size  
+
+    start_list: list[int] = list(range(start, stop, step))
+
+    for start in start_list:
+        _request_batch( db          = db,
+                        webenv      = webenv,
+                        query_key   = query_key,
+                        start       = start,
+                        batch_size  = batch_size,
+                        file_format = file_format,
+                        filename    = filename    )
+
+
+
+# ---------------------------------------------------------------------
+# File Functions
+# ---------------------------------------------------------------------
+# These functions are meant to be used with Entrez's responses.
+# Writing functions behave as follows:
+# - Make the parent dirs, if they don't exist.
+# - Overwrite existing files.
+
+
+# Write a string of text to a disk file. Read it later using SeqIO.
+# ---------------------------------------------------------------------
+def write_text(txt: str, filename: str):
+
+    Path(filename).parent.mkdir(parents=True, exist_ok=True)
+    Path(filename).write_text(txt)
+
+
+# Write xml as a bytes string to a disk file.
 # ---------------------------------------------------------------------
 def write_xml(xml_bytes: bytes, filename: str):
 
@@ -69,8 +174,7 @@ def write_xml(xml_bytes: bytes, filename: str):
     Path(filename).write_bytes(xml_bytes)
 
 
-# Read xml from a file in disk
-# This function is meant to be used with Entrez's xml responses.
+# Read xml from a file in disk.
 # ---------------------------------------------------------------------
 def read_xml(xml_filename: str) -> Union[DictionaryElement, ListElement]:
 
@@ -117,3 +221,4 @@ def print_in_color(text: str, lexer = JsonLexer(), style: str = 'default'):
     print(colored_str)
 
 # ---------------------------------------------------------------------
+
