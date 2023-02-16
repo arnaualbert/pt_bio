@@ -22,18 +22,30 @@ CACHE_DIR = Path('/bio/practica_2/data')
 from pathlib import Path
 
 def count_files(path):
+    """
+    Count the number of files in a directory
+    Input: path: srt (path of the directory)
+    Output: num_of_files: int (number of files in the directory)
+    """
     file_list = glob.glob(path)
     num_of_files = len(file_list)
     return num_of_files
     
-
-
 def get_xml_from_ncbi(terms):
+    """
+    Get the xml file from NCBI
+    Input: terms: list (list of terms)
+    Generate the xml files
+    """
     for i in terms:
         utils.request_search(db='nucleotide',term=i,retmax=1,xml_filename=f'/bio/practica_2/data/{i}.xml')
 
-
 def get_files_in_dir(directory_path):
+    """
+    Get the list of files in a directory
+    Input: directory_path: str (path of the directory)
+    Output: files: list (list of files in the directory)
+    """
     directory_path = Path(directory_path)
     files = []
     for file in directory_path.glob('*'):
@@ -42,6 +54,12 @@ def get_files_in_dir(directory_path):
     return files
 
 def get_id_list(list_of_files):
+    """
+    Get the list of ids from a list of files
+    Input: list_of_files: list (list of files)
+    Output: id_list: list (list of ids)
+    Read de xml and mekke it ain a dict where we extract the firs id of eachone
+    """
     id_list = []
     for file in list_of_files:
         dict = utils.read_xml(file)
@@ -50,10 +68,20 @@ def get_id_list(list_of_files):
     return id_list
 
 def get_gb_files(list_of_id):
+    """
+    Get the gb files from NCBI with a list of ids
+    Input: list_of_id: list (list of ids)
+    Output:  the genbank files
+    """
     for id in list_of_id:
         utils.request_fetch('nucleotide',id,'gb',f'/bio/practica_2/gb_files/{id}.gb')
 
 def rename_files_gb(list_of_gb):
+        """
+        Rename the genbank files with regex 
+        Input: list_of_gb: list (list of genbank files)
+        Rename the genbank files
+        """
         for file in list_of_gb:
             record_iter: GenBankIterator = SeqIO.parse(file, 'gb')
             for record in record_iter:
@@ -86,7 +114,6 @@ main_module: str = "__main__"
 
 if this_module == main_module:
 
-    # List of term to search for the id
     list_of_terms = ['Rabies lyssavirus isolate 18018LIB, complete genome','ebolavirus, complete genome','Marburg marburgvirus isolate MARV001, complete genome','Nipah virus, complete genome','Variola virus[ORGN]', 'TREPONEMA PALLIDUM TRIPLET ','Method of Immunization against the 4 serotypes of Dengue fever','Kyasanur forest disease virus isolate W6204 NS5 gene, partial cds']
     
     data_to_count = '/bio/practica_2/data/*' 
@@ -95,7 +122,6 @@ if this_module == main_module:
     gb_files = 'practica_2/gb_files'
     num_of_xml_files_before_search_in_ncbi = count_files(data_to_count)
     num_of_gb_files_before_search_in_ncbi = count_files(gb_files_to_count)
-    # Get the xml from ncbi
 
 
     print(num_of_xml_files_before_search_in_ncbi)
