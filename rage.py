@@ -5,6 +5,7 @@ from   Bio      import Entrez
 from typing     import Union
 import re
 import os
+import glob
 import utils
 from Bio.Entrez.Parser import DictionaryElement, ListElement
 import utils
@@ -19,6 +20,18 @@ Entrez.email = 'carde602@gmail.com'
 
 CACHE_DIR = Path('/bio/practica_2/data')
 from pathlib import Path
+
+def count_files(path):
+    file_list = glob.glob(path)
+    num_of_files = len(file_list)
+    return num_of_files
+    
+
+
+def get_xml_from_ncbi(terms):
+    for i in terms:
+        utils.request_search(db='nucleotide',term=i,retmax=1,xml_filename=f'/bio/practica_2/data/{i}.xml')
+
 
 def get_files_in_dir(directory_path):
     directory_path = Path(directory_path)
@@ -40,6 +53,24 @@ def get_gb_files(list_of_id):
     for id in list_of_id:
         utils.request_fetch('nucleotide',id,'gb',f'/bio/practica_2/gb_files/{id}.gb')
 
+def rename_files_gb(list_of_gb):
+        for file in list_of_gb:
+            record_iter: GenBankIterator = SeqIO.parse(file, 'gb')
+            for record in record_iter:
+                if record.features:
+                    for feature in record.features:
+                        if feature.type == "source":
+                            name_list = feature.qualifiers["organism"]
+                            name = name_list[0]
+                            reg_white_space = r'\s'
+                            pat_white_space = re.compile(reg_white_space)
+                            name = pat_white_space.sub('_', name)
+                            reg_name = r'\/([^\/]+)$'
+                            pat_name = re.compile(reg_name)
+                            file_name = pat_name.search(file).group(1)
+                            new_file_name = os.path.dirname(file) + '/' + name + os.path.splitext(file_name)[1]
+                            os.rename(file, new_file_name)
+
 # def rename_files(directory_path):
 #     list_of_files = get_files_in_dir(directory_path)
 #     list_of_parser_files = []
@@ -56,49 +87,37 @@ main_module: str = "__main__"
 if this_module == main_module:
 
     # List of term to search for the id
-    ###############     list_of_terms = ['Rabies lyssavirus isolate 18018LIB, complete genome','ebolavirus, complete genome','Marburg marburgvirus isolate MARV001, complete genome','Nipah virus, complete genome','Variola virus[ORGN]', 'TREPONEMA PALLIDUM TRIPLET ','Method of Immunization against the 4 serotypes of Dengue fever','Kyasanur forest disease virus isolate W6204 NS5 gene, partial cds']
+    list_of_terms = ['Rabies lyssavirus isolate 18018LIB, complete genome','ebolavirus, complete genome','Marburg marburgvirus isolate MARV001, complete genome','Nipah virus, complete genome','Variola virus[ORGN]', 'TREPONEMA PALLIDUM TRIPLET ','Method of Immunization against the 4 serotypes of Dengue fever','Kyasanur forest disease virus isolate W6204 NS5 gene, partial cds']
     
-    # Folder to save the id
-    data = '/bio/practica_2/data' 
+    data_to_count = '/bio/practica_2/data/*' 
+    gb_files_to_count = 'practica_2/gb_files/*'
+    data = '/bio/practica_2/data'
     gb_files = 'practica_2/gb_files'
-    # List of files xml
-    list_of_xml = get_files_in_dir(data)
-
-    list_of_gb = get_files_in_dir(gb_files)
-
-    # List of id to search for in the ncbi
-    ###############        id_list = get_id_list(list_of_files)
-
-    # Get the gb files from the list of id
-    ############    get_gb_files(id_list)
+    num_of_xml_files_before_search_in_ncbi = count_files(data_to_count)
+    num_of_gb_files_before_search_in_ncbi = count_files(gb_files_to_count)
+    # Get the xml from ncbi
 
 
-    record_iter: GenBankIterator = SeqIO.parse('/bio/practica_2/gb_files/EU293337.1.gb', 'gb')
-    record_list: list[SeqRecord] = list(record_iter)
+    print(num_of_xml_files_before_search_in_ncbi)
+    print(num_of_gb_files_before_search_in_ncbi)
+
+    if num_of_xml_files_before_search_in_ncbi == 0:
+        get_xml_from_ncbi(list_of_terms)
+        print('excecuted: get_xml_from_ncbi')
+
+    if num_of_xml_files_before_search_in_ncbi > 0:
+        list_of_xml = get_files_in_dir(data)
+        id_list = get_id_list(list_of_xml)
+        print(id_list)
+        get_gb_files(id_list)
+        print('excecuted: get_gb_files')
 
 
-    print(list_of_gb)
-    for file in list_of_gb:
-        record_iter: GenBankIterator = SeqIO.parse(file, 'gb')
-        for record in record_iter:
-            if record.features:
-                for feature in record.features:
-                    if feature.type == "source":
-                        name_list = feature.qualifiers["organism"]
-                        name = name_list[0]
-                        reg_white_space = r'\s'
-                        pat_white_space = re.compile(reg_white_space)
-                        name = pat_white_space.sub('_', name)
-                        reg_name = r'\/([^\/]+)$'
-                        pat_name = re.compile(reg_name)
-                        file_name = pat_name.search(file).group(1)
-                        new_file_name = os.path.dirname(file) + '/' + name + os.path.splitext(file_name)[1]
-                        os.rename(file, new_file_name)
-
-
-
-
-
+    if num_of_gb_files_before_search_in_ncbi > 0:
+        list_of_gb = get_files_in_dir(gb_files)
+        rename_files_gb(list_of_gb)
+        print('excecuted: rename_files_gb')
+    
 
     # GET NAME OF THE ORGANISM
     # for rec in SeqIO.parse('/bio/practica_2/gb_files/EU293337.1.gb','gb'):
