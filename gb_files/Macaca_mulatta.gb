@@ -1,0 +1,55 @@
+LOCUS       MACINRE                  630 bp    DNA     linear   PRI 14-FEB-1995
+DEFINITION  Macaca mulatta insulin receptor mRNA, partial cds, exons 9 - 12.
+ACCESSION   L35039
+VERSION     L35039.1
+KEYWORDS    insulin receptor; insulin receptor alpha-2 beta-2 subunit.
+SOURCE      Macaca mulatta (Rhesus monkey)
+  ORGANISM  Macaca mulatta
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Cercopithecidae; Cercopithecinae; Macaca.
+REFERENCE   1  (bases 1 to 630)
+  AUTHORS   Huang,Z., Bodkin,N.L., Ortmeyer,H.K., Hansen,B.C. and
+            Shuldiner,A.R.
+  TITLE     Hyperinsulinemia is associated with altered insulin receptor mRNA
+            splicing in muscle of the spontaneously obese diabetic rhesus
+            monkey
+  JOURNAL   J. Clin. Invest. 94 (3), 1289-1296 (1994)
+   PUBMED   8083370
+FEATURES             Location/Qualifiers
+     source          1..630
+                     /organism="Macaca mulatta"
+                     /mol_type="genomic DNA"
+                     /isolate="Q5"
+                     /db_xref="taxon:9544"
+                     /tissue_type="liver"
+     CDS             <1..>630
+                     /codon_start=1
+                     /product="insulin receptor"
+                     /protein_id="AAA62227.1"
+                     /translation="VSNSSSQIILKWKPPSDPNGNITHYLVFWERQAEDSELFELDYC
+                     LKGLKLPSRTWSPPFESEDSQKHNQSEYEDSAGECCSCPKTDSQILKELEESSFRKTF
+                     EDYLHNVVFVPRKTSSGTGAEDPRPSRKRRSLGDVGNVTVAVPTVAAFPNTSSTSTPT
+                     SPEEHRPFEKVVNKESLVISGLRHFTGYRIELQACNQDTPEERCSVAAYV"
+     exon            <1..47
+                     /number=9
+     exon            48..114
+                     /number=10
+     exon            115..126
+                     /number=11
+     exon            127..>210
+                     /number=12
+ORIGIN      
+        1 gtgtctaact catcatccca gattattctg aagtggaaac cgccctccga ccccaatggc
+       61 aacatcaccc actacctggt tttctgggag aggcaggcgg aagacagtga gctgttcgag
+      121 ctggattatt gcctcaaagg gctgaagctg ccctcgagga cctggtctcc accattcgag
+      181 tctgaagatt ctcagaagca caaccagagt gaatatgagg attcagccgg tgaatgttgc
+      241 tcctgtccaa agacagactc tcagatcctg aaggagctgg aggagtcctc gtttaggaag
+      301 acgtttgagg attacctgca caacgtggtt ttcgtcccca gaaaaacctc ttcaggcact
+      361 ggtgccgagg accctaggcc atctcggaaa cgcaggtccc ttggcgatgt tgggaatgtg
+      421 acggtggccg tgcccacggt ggcagctttc cccaacactt cctcgaccag cacgcccaca
+      481 agtccggagg agcacaggcc ctttgagaag gtggtgaaca aggagtcgct ggtcatctcc
+      541 ggcttgcgac acttcacggg ctatcgcatc gagctgcagg cttgcaacca agacacccct
+      601 gaggaacggt gcagtgtggc agcctacgtc
+//
+

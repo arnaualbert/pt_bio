@@ -1,0 +1,10 @@
+virus,accession_number,scores,percentage
+Bombyx_mori,NM_001043546,2857.0,40
+Rattus_norvegicus,RNU80633,300.0,4
+Bos_taurus,NM_174576,1945.0,27
+Bubalus_bubalis,Y14017,519.0,7
+Macaca_mulatta,MACINRE,882.0,12
+Ovis_aries,AJ844652,913.0,13
+Oreochromis_niloticus,KC517071,646.0,9
+Lepisma_saccharina,KX087106,2699.0,38
+Homo_sapiens,NM_003749,7108.0,100

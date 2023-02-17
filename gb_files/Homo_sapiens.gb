@@ -1,0 +1,717 @@
+LOCUS       NM_003749               8156 bp    mRNA    linear   PRI 14-FEB-2023
+DEFINITION  Homo sapiens insulin receptor substrate 2 (IRS2), mRNA.
+ACCESSION   NM_003749
+VERSION     NM_003749.3
+KEYWORDS    RefSeq; MANE Select.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 8156)
+  AUTHORS   Zia A, Shams S, Shah M, Afridi SG and Khan A.
+  TITLE     Structural Consequences of IRS-2 nsSNPs and Implication for Insulin
+            Receptor Substrate-2 Protein Stability
+  JOURNAL   Biochem Genet 61 (1), 69-86 (2023)
+   PUBMED   35727487
+  REMARK    GeneRIF: Structural Consequences of IRS-2 nsSNPs and Implication
+            for Insulin Receptor Substrate-2 Protein Stability.
+REFERENCE   2  (bases 1 to 8156)
+  AUTHORS   Tian C, Liu S and Huo R.
+  TITLE     Identification of the ageing-related prognostic gene signature, and
+            the associated regulation axis in skin cutaneous melanoma
+  JOURNAL   Sci Rep 13 (1), 24 (2023)
+   PUBMED   36631465
+  REMARK    GeneRIF: Identification of the ageing-related prognostic gene
+            signature, and the associated regulation axis in skin cutaneous
+            melanoma.
+            Publication Status: Online-Only
+REFERENCE   3  (bases 1 to 8156)
+  AUTHORS   Sun Z, Song L and Li J.
+  TITLE     Knockdown of small nucleolar RNA host gene 10 (SNHG10) alleviates
+            the injury of human neuroblastoma cells via the miR-1277-5p/insulin
+            substrate receptor 2 axis
+  JOURNAL   Bioengineered 13 (1), 709-720 (2022)
+   PUBMED   34967697
+  REMARK    GeneRIF: Knockdown of small nucleolar RNA host gene 10 (SNHG10)
+            alleviates the injury of human neuroblastoma cells via the
+            miR-1277-5p/insulin substrate receptor 2 axis.
+REFERENCE   4  (bases 1 to 8156)
+  AUTHORS   Bhushan R, Rani A, Gupta D, Ali A and Dubey PK.
+  TITLE     MicroRNA-7 Regulates Insulin Signaling Pathway by Targeting IRS1,
+            IRS2, and RAF1 Genes in Gestational Diabetes Mellitus
+  JOURNAL   Microrna 11 (1), 57-72 (2022)
+   PUBMED   35422233
+  REMARK    GeneRIF: MicroRNA-7 Regulates Insulin Signaling Pathway by
+            Targeting IRS1, IRS2, and RAF1 Genes in Gestational Diabetes
+            Mellitus.
+REFERENCE   5  (bases 1 to 8156)
+  AUTHORS   Gu H, Li L, Zhou B, Li M, Zhong W, Wei X and Zhong X.
+  TITLE     Single nucleotide polymorphisms in binding site of miRNA-135a and
+            targeted gene IRS2 are correlated with multiple clinical features
+            of PCOS: A study in Chinese women
+  JOURNAL   Technol Health Care 30 (S1), 71-80 (2022)
+   PUBMED   35124585
+  REMARK    GeneRIF: Single nucleotide polymorphisms in binding site of
+            miRNA-135a and targeted gene IRS2 are correlated with multiple
+            clinical features of PCOS: A study in Chinese women.
+REFERENCE   6  (bases 1 to 8156)
+  AUTHORS   Platanias LC, Uddin S, Yetter A, Sun XJ and White MF.
+  TITLE     The type I interferon receptor mediates tyrosine phosphorylation of
+            insulin receptor substrate 2
+  JOURNAL   J Biol Chem 271 (1), 278-282 (1996)
+   PUBMED   8550573
+REFERENCE   7  (bases 1 to 8156)
+  AUTHORS   Johnston JA, Wang LM, Hanson EP, Sun XJ, White MF, Oakes SA, Pierce
+            JH and O'Shea JJ.
+  TITLE     Interleukins 2, 4, 7, and 15 stimulate tyrosine phosphorylation of
+            insulin receptor substrates 1 and 2 in T cells. Potential role of
+            JAK kinases
+  JOURNAL   J Biol Chem 270 (48), 28527-28530 (1995)
+   PUBMED   7499365
+REFERENCE   8  (bases 1 to 8156)
+  AUTHORS   Patti ME, Sun XJ, Bruening JC, Araki E, Lipes MA, White MF and Kahn
+            CR.
+  TITLE     4PS/insulin receptor substrate (IRS)-2 is the alternative substrate
+            of the insulin receptor in IRS-1-deficient mice
+  JOURNAL   J Biol Chem 270 (42), 24670-24673 (1995)
+   PUBMED   7559579
+REFERENCE   9  (bases 1 to 8156)
+  AUTHORS   Sun XJ, Wang LM, Zhang Y, Yenush L, Myers MG Jr, Glasheen E, Lane
+            WS, Pierce JH and White MF.
+  TITLE     Role of IRS-2 in insulin and cytokine signalling
+  JOURNAL   Nature 377 (6545), 173-177 (1995)
+   PUBMED   7675087
+REFERENCE   10 (bases 1 to 8156)
+  AUTHORS   Ridderstrale M, Degerman E and Tornqvist H.
+  TITLE     Growth hormone stimulates the tyrosine phosphorylation of the
+            insulin receptor substrate-1 and its association with
+            phosphatidylinositol 3-kinase in primary adipocytes
+  JOURNAL   J Biol Chem 270 (8), 3471-3474 (1995)
+   PUBMED   7876077
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AL162497.20, AF073310.1,
+            AB050954.1, AF385933.1, CA952668.1, BC026044.1, AF161416.1 and
+            CA416129.1.
+            This sequence is a reference standard in the RefSeqGene project.
+            
+            On Nov 23, 2018 this sequence version replaced NM_003749.2.
+            
+            Summary: This gene encodes the insulin receptor substrate 2, a
+            cytoplasmic signaling molecule that mediates effects of insulin,
+            insulin-like growth factor 1, and other cytokines by acting as a
+            molecular adaptor between diverse receptor tyrosine kinases and
+            downstream effectors. The product of this gene is phosphorylated by
+            the insulin receptor tyrosine kinase upon receptor stimulation, as
+            well as by an interleukin 4 receptor-associated kinase in response
+            to IL4 treatment. [provided by RefSeq, Jul 2008].
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: AF073310.1, SRR1660803.92050.1
+                                           [ECO:0000332]
+            RNAseq introns              :: single sample supports all introns
+                                           SAMEA1968968, SAMEA2154665
+                                           [ECO:0000348]
+            ##Evidence-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            MANE Ensembl match     :: ENST00000375856.5/ ENSP00000365016.3
+            RefSeq Select criteria :: based on single protein-coding transcript
+            ##RefSeq-Attributes-END##
+            COMPLETENESS: full length.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-16                AL162497.20        126402-126417       c
+            17-97               AF073310.1         2-82
+            98-747              AB050954.1         1967-2616
+            748-1638            AF073310.1         737-1627
+            1639-2697           AF385933.1         1250-2308
+            2698-3142           AF073310.1         2687-3131
+            3143-4534           AF385933.1         2754-4145
+            4535-4542           AF073310.1         4521-4528
+            4543-4930           CA952668.1         30-417
+            4931-5606           BC026044.1         431-1106
+            5607-5617           AF073310.1         5587-5597
+            5618-5636           AF073310.1         5599-5617
+            5637-5661           AF073310.1         5619-5643
+            5662-5732           AF161416.1         81-151
+            5733-6328           AF073310.1         5714-6309
+            6329-6429           AF161416.1         748-848
+            6430-6695           AF161416.1         850-1115
+            6696-7009           AF161416.1         1117-1430
+            7010-7014           CA416129.1         17-21               c
+            7015-8156           AL162497.20        92529-93670         c
+FEATURES             Location/Qualifiers
+     source          1..8156
+                     /organism="Homo sapiens"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="13"
+                     /map="13q34"
+     gene            1..8156
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="insulin receptor substrate 2"
+                     /db_xref="GeneID:8660"
+                     /db_xref="HGNC:HGNC:6126"
+                     /db_xref="MIM:600797"
+     exon            1..4542
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /inference="alignment:Splign:2.1.0"
+     misc_feature    177..179
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="upstream in-frame stop codon"
+     CDS             531..4547
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /codon_start=1
+                     /product="insulin receptor substrate 2"
+                     /protein_id="NP_003740.2"
+                     /db_xref="CCDS:CCDS9510.1"
+                     /db_xref="GeneID:8660"
+                     /db_xref="HGNC:HGNC:6126"
+                     /db_xref="MIM:600797"
+                     /translation="MASPPRHGPPGPASGDGPNLNNNNNNNNHSVRKCGYLRKQKHGH
+                     KRFFVLRGPGAGGDEATAGGGSAPQPPRLEYYESEKKWRSKAGAPKRVIALDCCLNIN
+                     KRADAKHKYLIALYTKDEYFAVAAENEQEQEGWYRALTDLVSEGRAAAGDAPPAAAPA
+                     ASCSASLPGALGGSAGAAGAEDSYGLVAPATAAYREVWQVNLKPKGLGQSKNLTGVYR
+                     LCLSARTIGFVKLNCEQPSVTLQLMNIRRCGHSDSFFFIEVGRSAVTGPGELWMQADD
+                     SVVAQNIHETILEAMKALKELFEFRPRSKSQSSGSSATHPISVPGARRHHHLVNLPPS
+                     QTGLVRRSRTDSLAATPPAAKCSSCRVRTASEGDGGAAAGAAAAGARPVSVAGSPLSP
+                     GPVRAPLSRSHTLSGGCGGRGSKVALLPAGGALQHSRSMSMPVAHSPPAATSPGSLSS
+                     SSGHGSGSYPPPPGPHPPLPHPLHHGPGQRPSSGSASASGSPSDPGFMSLDEYGSSPG
+                     DLRAFCSHRSNTPESIAETPPARDGGGGGEFYGYMTMDRPLSHCGRSYRRVSGDAAQD
+                     LDRGLRKRTYSLTTPARQRPVPQPSSASLDEYTLMRATFSGSAGRLCPSCPASSPKVA
+                     YHPYPEDYGDIEIGSHRSSSSNLGADDGYMPMTPGAALAGSGSGSCRSDDYMPMSPAS
+                     VSAPKQILQPRAAAAAAAAVPSAGPAGPAPTSAAGRTFPASGGGYKASSPAESSPEDS
+                     GYMRMWCGSKLSMEHADGKLLPNGDYLNVSPSDAVTTGTPPDFFSAALHPGGEPLRGV
+                     PGCCYSSLPRSYKAPYTCGGDSDQYVLMSSPVGRILEEERLEPQATPGPSQAASAFGA
+                     GPTQPPHPVVPSPVRPSGGRPEGFLGQRGRAVRPTRLSLEGLPSLPSMHEYPLPPEPK
+                     SPGEYINIDFGEPGARLSPPAPPLLASAASSSSLLSASSPASSLGSGTPGTSSDSRQR
+                     SPLSDYMNLDFSSPKSPKPGAPSGHPVGSLDGLLSPEASSPYPPLPPRPSASPSSSLQ
+                     PPPPPPAPGELYRLPPASAVATAQGPGAASSLSSDTGDNGDYTEMAFGVAATPPQPIA
+                     APPKPEAARVASPTSGVKRLSLMEQVSGVEAFLQASQPPDPHRGAKVIRADPQGGRRR
+                     HSSETFSSTTTVTPVSPSFAHNPKRHNSASVENVSLRKSSEGGVGVGPGGGDEPPTSP
+                     RQLQPAPPLAPQGRPWTPGQPGGLVGCPGSGGSPMRRETSAGFQNGLNYIAIDVREEP
+                     GLPPQPQPPPPPLPQPGDKSSWGRTRSLGGLISAVGVGSTGGGCGGPGPGALPPANTY
+                     ASIDFLSHHLKEATIVKE"
+     misc_feature    531..623
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    675..746
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    1437..1763
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    1446..1448
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:20068231, ECO:0007744|PubMed:21406692,
+                     ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    1566..1568
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    1578..1580
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0007744|PubMed:16964243,
+                     ECO:0007744|PubMed:18669648, ECO:0007744|PubMed:23186163;
+                     propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     phosphorylation site"
+     misc_feature    1623..1625
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    1680..1682
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    1692..1694
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:17081983,
+                     ECO:0007744|PubMed:18088087, ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:20068231; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    1701..1703
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:17081983,
+                     ECO:0007744|PubMed:18088087, ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:19369195, ECO:0007744|PubMed:20068231;
+                     propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     phosphorylation site"
+     misc_feature    1764..1766
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Omega-N-methylarginine.
+                     /evidence=ECO:0007744|PubMed:24129315; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); methylation site"
+     misc_feature    1812..2141
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    2088..2090
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2097..2099
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2109..2111
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0007744|PubMed:16964243,
+                     ECO:0007744|PubMed:18669648, ECO:0007744|PubMed:23186163;
+                     propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     phosphorylation site"
+     misc_feature    2148..2159
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: YXXM motif 1"
+     misc_feature    2148..2150
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphotyrosine, by INSR. /evidence=ECO:0000250;
+                     propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     phosphorylation site"
+     misc_feature    2208..2210
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:17081983,
+                     ECO:0007744|PubMed:20068231, ECO:0007744|PubMed:21406692,
+                     ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2259..2261
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2265..2267
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2268..2270
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0007744|PubMed:18669648; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2310..2312
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:20068231, ECO:0007744|PubMed:23186163,
+                     ECO:0007744|PubMed:24275569; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2322..2333
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: YXXM motif 2"
+     misc_feature    2352..2354
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2388..2390
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2487..2498
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: YXXM motif 3"
+     misc_feature    2487..2489
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphotyrosine, by INSR.
+                     /evidence=ECO:0000250|UniProtKB:P81122; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2553..2564
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: YXXM motif 4"
+     misc_feature    2553..2555
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphotyrosine, by INSR.
+                     /evidence=ECO:0007744|PubMed:20068231,
+                     ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2565..2567
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2574..2576
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2637..2747
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    2733..2735
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2736..2738
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:20068231, ECO:0007744|PubMed:23186163;
+                     propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     phosphorylation site"
+     misc_feature    2754..2765
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: YXXM motif 5"
+     misc_feature    2838..2840
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2865..2867
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0007744|PubMed:18669648; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2943..2945
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    2997..3008
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: YXXM motif 6"
+     misc_feature    3012..3014
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    3048..3833
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    3273..3275
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18088087,
+                     ECO:0007744|PubMed:18220336, ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:20068231, ECO:0007744|PubMed:21406692,
+                     ECO:0007744|PubMed:23186163, ECO:0007744|PubMed:24275569;
+                     propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     phosphorylation site"
+     misc_feature    3285..3287
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphotyrosine, by INSR. /evidence=ECO:0000250;
+                     propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     phosphorylation site"
+     misc_feature    3447..3449
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:23186163, ECO:0007744|PubMed:24275569;
+                     propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     phosphorylation site"
+     misc_feature    3462..3464
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphotyrosine, by INSR. /evidence=ECO:0000250;
+                     propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     phosphorylation site"
+     misc_feature    3744..3755
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: YXXM motif 7"
+     misc_feature    3774..3776
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0007744|PubMed:24275569; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    3828..3830
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:23186163, ECO:0007744|PubMed:24275569;
+                     propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     phosphorylation site"
+     misc_feature    3891..4418
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    4005..4007
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphothreonine.
+                     /evidence=ECO:0007744|PubMed:18669648; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    4014..4016
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    4050..4052
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    4056..4058
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:20068231, ECO:0007744|PubMed:21406692,
+                     ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    4086..4088
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    4137..4139
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphoserine.
+                     /evidence=ECO:0007744|PubMed:18669648,
+                     ECO:0007744|PubMed:23186163; propagated from
+                     UniProtKB/Swiss-Prot (Q9Y4H2.2); phosphorylation site"
+     misc_feature    4287..4289
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="Phosphotyrosine, by INSR. /evidence=ECO:0000250;
+                     propagated from UniProtKB/Swiss-Prot (Q9Y4H2.2);
+                     phosphorylation site"
+     exon            4543..8156
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /inference="alignment:Splign:2.1.0"
+     regulatory      6988..6993
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="hexamer: AATAAA"
+     polyA_site      7014
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="major polyA site"
+     regulatory      8134..8139
+                     /regulatory_class="polyA_signal_sequence"
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+                     /note="hexamer: AATAAA"
+     polyA_site      8156
+                     /gene="IRS2"
+                     /gene_synonym="IRS-2"
+ORIGIN      
+        1 gttactcact gtgcggcggg gaccgcgacg agcccgggtc gccgttggca gcagcagcag
+       61 caacaccagc agcagcagca gccccggcgg cggcgcggac cccgagcgcc cgggcgcacc
+      121 ccggcttccc ggagcgcgac gcggcggcag cagccccggt gcggccgcgc gcgccttagg
+      181 ctcggccccg cggctcgggg accccgactc ccggcccagc gagcgcgtcc cccggcgccg
+      241 cccgagagcc cgaggaggca gcggccgcag gcagccgggg aggggggcgg ccaccgcccg
+      301 cgccgggcat cctcaggagc cccagagcgc ggagggcgcg gcgccgccga gcggtgctgg
+      361 cccccgcggg cctccccgga ccttccccac cgcctgggcc cgagggacgc gtgatcgggc
+      421 gggcggccgg gcgcaagggt gggagggagc cgcccccgcc cgcgccccct ccgcccctcg
+      481 ccccaacccc tgggcgccgg gcccgggccg cgcggcctga agcgcccgcg atggcgagcc
+      541 cgccgcggca cgggccgccc gggccggcga gcggagacgg ccccaacctc aacaacaaca
+      601 acaacaacaa caaccacagc gtgcgcaagt gcggctacct gcgcaagcag aagcatggcc
+      661 acaagcgctt cttcgtgctg cgcggacccg gcgcgggcgg cgacgaggcg acggcgggcg
+      721 gggggtcggc gccgcaaccg ccgcggctcg agtactacga gagcgagaaa aagtggcgga
+      781 gcaaggcagg cgcgccgaaa cgggtgatcg ctctcgactg ctgcctgaac atcaacaagc
+      841 gcgccgacgc caagcacaag tacctgatcg ccctctacac caaggacgag tacttcgccg
+      901 tggccgccga gaacgagcag gagcaggagg gctggtaccg cgcgctcacc gacctggtca
+      961 gcgagggccg cgcggccgcc ggagacgcgc cccccgccgc cgcgcccgcc gcgtcctgca
+     1021 gcgcctccct gcccggcgcc ctgggcggct ctgccggcgc cgccggggcc gaggacagct
+     1081 acgggctggt ggctcccgcc acggccgcct accgtgaggt gtggcaggtg aacctgaagc
+     1141 ccaagggtct gggccagagc aagaacctga cgggggtgta ccgtctgtgc ctgtctgcgc
+     1201 gcaccatcgg cttcgtgaag ctcaactgcg agcagccgtc ggtgacgctg cagctcatga
+     1261 acatccgccg ctgcggccac tcggacagct tcttcttcat cgaggtgggc cgctcggccg
+     1321 tcacaggccc cggcgagctg tggatgcagg cggacgactc ggtggtggcg cagaacatcc
+     1381 acgagaccat cctggaggcc atgaaggcgc tcaaggagct cttcgagttc cggccgcgca
+     1441 gtaagagcca atcgtcgggg tcgtcggcca cgcaccccat cagcgtcccc ggcgcgcgcc
+     1501 gccaccacca cctggtcaac ctgcccccca gccagacggg cctggtgcgc cgctcgcgca
+     1561 ccgacagcct ggccgccacc ccgccggcgg ccaagtgcag ctcgtgccgg gtgcgcaccg
+     1621 ccagcgaggg cgacggcggc gcggcggcgg gagcggcggc cgcgggcgcc aggccggtgt
+     1681 cggtggctgg gagccccctg agccccgggc cggtgcgcgc gcccctgagc cgctcgcaca
+     1741 ccctgagcgg cggctgcggc ggccgcggga gcaaggtggc gctgctgccg gcagggggcg
+     1801 cgctgcaaca cagccgctcc atgtccatgc ccgtggcgca ctcgccgccc gccgccacca
+     1861 gccccggctc cctgtcgtcc agcagcggcc acggctcggg ctcctacccg ccgccgcccg
+     1921 gcccgcaccc gcctctgccg catccgctgc accacggccc cggccagcgg ccctccagcg
+     1981 gcagcgcctc cgcctcgggc tcccccagcg accccggctt catgtccctg gacgagtacg
+     2041 gctccagccc aggcgacctg cgcgccttct gcagccaccg aagcaacacg cccgagtcca
+     2101 tcgcggagac gcccccggcc cgagacggcg gcggcggcgg tgagttctac gggtacatga
+     2161 ccatggacag gcccctgagc cactgtggcc gctcctaccg ccgggtctcg ggggacgcgg
+     2221 cccaggacct ggaccgaggg ctgcgcaaga ggacctactc cctgaccacg ccagcccggc
+     2281 agcggccggt gccccagccc tcctctgcct cgctggatga atacaccctg atgcgggcca
+     2341 ccttctcggg cagcgcgggc cgcctctgcc cgtcctgccc cgcgtcctct cccaaggtgg
+     2401 cctaccaccc ctacccagag gactacggag acatcgagat cggctcccac aggagctcca
+     2461 gcagcaacct gggggcagac gacggctaca tgcccatgac gcccggcgcg gccctcgcgg
+     2521 gcagtgggag cggcagctgc aggagcgacg actacatgcc catgagcccc gccagcgtgt
+     2581 ccgcccccaa gcagatcttg cagcccaggg ccgccgccgc cgccgccgcc gccgtgcctt
+     2641 ctgcggggcc tgcggggcca gcacccacct ctgcggcggg caggacattc ccggcgagcg
+     2701 ggggcggcta caaggccagc tcgcccgccg agagctcccc cgaggacagt gggtacatgc
+     2761 gcatgtggtg cggttccaag ctgtccatgg agcatgcaga tggcaagctg ctgcccaacg
+     2821 gggactacct caacgtgtcc cccagcgacg cggtcaccac gggcaccccg cccgacttct
+     2881 tctccgcagc cctgcacccc ggcggggagc cgctcagggg cgttcccggc tgctgctaca
+     2941 gctccttgcc ccgctcctac aaggccccct acacctgtgg cggggacagc gaccagtacg
+     3001 tgctcatgag ctcccccgtg gggcgcatcc tggaggagga gcgtctggag cctcaggcca
+     3061 cgccagggcc cagccaggcg gccagcgcct tcggggccgg ccccacgcag ccccctcacc
+     3121 ctgtagtgcc ttcgcccgtg cggcctagcg gcggccgccc ggagggcttc ttgggccagc
+     3181 gcggccgggc ggtgaggccc acgcgcctgt ccctggaggg gctgcccagc ctgcccagca
+     3241 tgcacgagta cccactgcca ccggagccca agagccccgg cgagtacatc aacatcgact
+     3301 ttggcgagcc cggggcccgc ctgtcgccgc ccgcgcctcc cctgctggcg tcggcggcct
+     3361 cgtcctcctc gctcttgtcc gccagcagcc cggcctcgtc gctgggctca ggcaccccgg
+     3421 gcaccagcag cgacagccgg cagcggtctc cgctctccga ctacatgaac ctcgacttca
+     3481 gctcccccaa gtctcctaag ccgggcgccc cgagcggcca ccccgtgggc tccttggacg
+     3541 gcctcctgtc ccccgaggcc tcctccccgt atccgccgtt gcccccgcgt ccgtccgcgt
+     3601 ccccgtcgtc gtctctgcag ccgccgccac cgccgccggc cccgggggag ctgtaccgcc
+     3661 tgccccccgc ctcggccgtt gccaccgccc agggcccggg cgccgcctca tcgttgtcct
+     3721 cggacaccgg ggacaatggt gactacaccg agatggcttt tggtgtggcc gccaccccgc
+     3781 cgcaacctat cgcggccccc ccgaagccag aagctgcccg cgtggccagc ccgacgtcgg
+     3841 gcgtgaagag gctgagcctc atggagcagg tgtcgggagt cgaggccttc ctgcaggcca
+     3901 gccagccccc ggacccccac cgcggcgcca aggtcatccg cgcagacccg caggggggcc
+     3961 gccgccgcca cagttccgag accttctcct ccaccacgac ggtcaccccc gtgtccccgt
+     4021 ccttcgccca caaccccaag cgccacaact cggcctccgt ggaaaatgtc tctctcagga
+     4081 aaagcagcga gggcggcgtg ggtgtcggcc ctggaggggg cgacgagccg cccacctccc
+     4141 cacgacagtt gcagccggcg ccccctttgg caccgcaggg ccggccgtgg accccgggtc
+     4201 agcccggggg cttggtcggt tgtcctggga gcggtggatc gcccatgcgc agagagacct
+     4261 ctgccggctt ccagaatggt ctcaactaca tcgccatcga cgtgagggag gagcccgggc
+     4321 tgccacccca gccgcagccg ccgccgccgc cgcttcctca gccgggagac aagagctcct
+     4381 ggggccggac ccgaagcctc gggggtctca tcagcgctgt gggcgtcggc agcaccggcg
+     4441 gcgggtgcgg ggggccgggt cccggtgccc tgccccctgc caacacctac gccagcattg
+     4501 acttcttgtc ccaccacttg aaggaggcca ccatcgtgaa agagtgaaga tctgtctggc
+     4561 tttatcacca ggatgtcaca tgtcagagag tatcattaaa agaagacgct cagcactgtt
+     4621 tcagcccgaa gctgcttgca gttttctttt ggatctgagc aatgactgtg tttggaaaca
+     4681 tctgtggact ctgttagatg aggcaccaac aaggcaaggt cacctgcctc tttcccttgt
+     4741 tcccggatgg ggcattcatc attgtgctgt ttgcgttttg ttttgttttg ttttaacaaa
+     4801 attagctgaa gaagttattc tcaagaaaat tggatgtttt cattggcctt cttaaattgt
+     4861 ggccagtgtc ttttaatttc ttcttctttt ccttttggca aagcagatat aaccctcagc
+     4921 atgctaggag agtgcacccg tacctatgga agtggtaaaa tctggtattt actggcttac
+     4981 actcaaaacg accacagtcc tacctcagtt caaggtaaag ccggatttcc gtggcggggg
+     5041 tcccacagga cctcctgtag tagcccctgc gctgtgtgtc tggagcgcgg tcctcggcct
+     5101 tattgaaatg gtccaagtag acagctgctt gttggattcc agtgcaggta cctgcgatgt
+     5161 ttacgtccac accgagccca gtgtgggact gacatttctc aatggaagtg aaatttggga
+     5221 ttggactttg aagacggatt actaaataat aattattata tgtaactgaa gcaacctact
+     5281 tttgaaaatc aactgtattg ggtagtggga ggtgggaggg aagggctttg ggaaggggat
+     5341 gaatatctct ttttaccttt aacagacttg tttaatcttc tcgatgtaga tgtttatgta
+     5401 ggtacttcac attgcaaacg ccttttattc tatttacaag ctcagatgtc tctgctctcc
+     5461 tgaatcttgg gcatgccttt ctgtaaccaa aaatccctgt aggcgtgcta gcaattccag
+     5521 ggtggtccgg gtttggcaga tttgattttt aaaaaacgta ttatctttaa taaaatgtta
+     5581 ttatgtcaac cagtgaggct gccctgaaca aaaaaaacaa aaagaaaaaa aaaaaaggaa
+     5641 agaaagaaac tgataaaaag aggcattcca gcccctatgt tattgatgga aaaagaaaaa
+     5701 gaagaaaagc aatctcgcag tacatgttac ttgtcgaaaa aattccggac aagactaccc
+     5761 ttgttttatg ttttcagtat tctgaaaata ccagtgtgtg gcagttctcg cagatgttac
+     5821 ctaaaactgc tgaacttgac cggcagaatg ttctgccgtt ttctgctccc tcgacacttg
+     5881 attggagggc tgtcgacctc tcctcccgtg ggggcttccc cagtgcctat cttctctgat
+     5941 agtcatggag aggttacact aattcattgg agatgtaagt tgttggtttt gttttgtttt
+     6001 gtttttagaa aaatatatat aaatatataa tagatatcta tcgctataga ataatgcatt
+     6061 aataaaatga ggctttttta gaggaagacc aaaaaattca atgtcttaaa aatatattta
+     6121 atggcaatgc aaaagtcttc ctgcttccgt gctgaacttt agaacagagg attgtattgc
+     6181 aagacaaagt tgaatgtaaa gtgatctccc tgaacatttt taaggtttta cttttctgaa
+     6241 attatacatc acagcagtgc ataggccata taatgttagc tggaaggtca atttcagtgt
+     6301 atgatatact ttattaagat gtataaaaat cctgaagttt ttatttagtt ttgggaatag
+     6361 gcatcaatgg gtggtatttg ctttgtaact ccccccaggt acgataggga ctgaatatgg
+     6421 accctgctga aagcagtgta ttgacgcata tttaactcgc cctctatccg tagagtagtc
+     6481 atgacactat acagatggtt cgtgttcata ctgcagctta aaacaagcaa aatacacaga
+     6541 tgataatatg ctaaattttc ctctatcctg tacatttcac aaaaaggcat atgcaatatt
+     6601 tacattttta atttagttta cagaatggaa ccaaaatgta taaatgttat gtttgctaaa
+     6661 acttcacaat gtatattggg tctttgtaca ttttgcctga cttaccttaa atttaaaata
+     6721 ttttttgcta tataaacttt aacagttatt aaacagtgtt ttctttttgg gtacgtattg
+     6781 tttctggata tcaagatgtt aaatatattt cttgctattg tgatatgaca agagacttaa
+     6841 cttatcttgc tctgtcttcc actgtacacg ctgtatatag gggtcaatgt gatgctgctg
+     6901 gagacgagaa taaactggac tagaatagtg cattgtattt agtctgtatt gatcatggat
+     6961 gccctcctta atagccatat gcaataaaat aaagtacatt atttatgaaa tgaatacagt
+     7021 cctgaagatt ttttctgtac gaattctctg tttaacataa agccaatcta cttttagagt
+     7081 ttgggagtaa gtgaggaaat actaggctcc taaaaatact tggatacccc ttttaatttt
+     7141 aaaactttta ttctggaagc caaaaaatac ctgccagata acaacattta tgaaaagtaa
+     7201 atgtgttata taacaaaaca gaacattcga tgtactctac aaaacagagt ccttatgacg
+     7261 tgctggatgc cattctaaat acataacaaa tattaacttc ttgatagctc atgacaatct
+     7321 taggaggtaa gaattgtcat cctcattcta cagaggagga gcccgaggta caaaaatgct
+     7381 aagagacttg tgtgagagca cacagtccat gagtggtaaa accaggaccg ctccccagct
+     7441 ctgcagtcca gaatctgctt atgcacctct gcttagtgct cccttcctga tgtgcacaca
+     7501 gaagatacac caacgtgtac atcaagaatg ctccctccat gacatgcaca cagaagatgt
+     7561 accaatgcat acattaagaa tgcttcctcc ggccgggcgt ggtggctcac acctgtaatc
+     7621 ccagcacttt gggaggctga ggcaggcaga tcacctgagg tcaggagttc gagacaagcc
+     7681 tgaccaacat ggagaaaccc cgtctctact aaaaatacaa aattagccag gcgtggtggc
+     7741 gcatgcctgt aatcccagct actcgggagg ctgaggcagg agaatggctt gaacccggga
+     7801 ggcagaggtt gccgtgagcc aagataatgc cattgcactc cagcctgggc aacaagagcg
+     7861 aaactccgtc tcaaaaaaaa aaaaaaaaaa gaagaagaat gctgcctcca tgacacaaac
+     7921 acagaagaag acataccgat gcatacatca agaatacaaa gaagaaaatc atcagatcca
+     7981 ggaaaatgca attcaggaag cagaaaatag aaaattgatg ctgtgaattt ttatccagga
+     8041 gagttttacc tccttgcttg aaacatttgt ccgtgcatcc actttgccct aaaatgatag
+     8101 tcatgtaata atgtgtgtgt tatcttttga acaaataaaa tcagtgcaat ttggaa
+//
+

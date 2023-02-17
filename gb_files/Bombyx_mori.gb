@@ -1,0 +1,424 @@
+LOCUS       NM_001043546            6020 bp    mRNA    linear   INV 18-FEB-2022
+DEFINITION  Bombyx mori insulin receptor (InR), mRNA.
+ACCESSION   NM_001043546
+VERSION     NM_001043546.1
+KEYWORDS    RefSeq.
+SOURCE      Bombyx mori (domestic silkworm)
+  ORGANISM  Bombyx mori
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Endopterygota; Lepidoptera; Glossata;
+            Ditrysia; Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+REFERENCE   1  (bases 1 to 6020)
+  AUTHORS   Ou J, Deng HM, Zheng SC, Huang LH, Feng QL and Liu L.
+  TITLE     Transcriptomic analysis of developmental features of Bombyx mori
+            wing disc during metamorphosis
+  JOURNAL   BMC Genomics 15, 820 (2014)
+   PUBMED   25261999
+  REMARK    Publication Status: Online-Only
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence was derived from AF025542.1.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: AF025542.1, ICPK01044024.1
+                                           [ECO:0000332]
+            RNAseq introns              :: mixed/partial sample support
+                                           SAMEA104142601, SAMEA104142602
+                                           [ECO:0000350]
+            ##Evidence-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..6020
+                     /organism="Bombyx mori"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:7091"
+                     /chromosome="5"
+                     /map="5"
+     gene            1..6020
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /note="insulin receptor"
+                     /db_xref="GeneID:692560"
+     exon            1..201
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     misc_feature    134..136
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /note="upstream in-frame stop codon"
+     exon            202..350
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     CDS             221..4639
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /EC_number="2.7.10.1"
+                     /note="insulin receptor-like protein; insulin-like
+                     receptor"
+                     /codon_start=1
+                     /product="insulin receptor precursor"
+                     /protein_id="NP_001037011.1"
+                     /db_xref="GeneID:692560"
+                     /translation="MLEVRRGVMRRACDRLGWPAVACALLIACARTYAGTEVVPARGV
+                     CPSMDLRNNPDQIRRLEGCRVIEGQLSIVLMERATNKIFDNMSFPQLREVTGYILIYK
+                     TKGLRNLGDLFPNLPVVRGMQLFKDFALVIFDNEHLEALGLNSLMKIERGGVRIQHND
+                     RLCYTNTIDWSRITRDDAEIIVRSNYDTRLCGLCPNAQSRVEEDHRQSLPQCPADTKG
+                     KLLCWDEKHCQKICPSACGDHGCMSNGTCCNSACLGGCDGPLASNCFVCKKFSFEYGS
+                     EMTCMESCPGGTYELSRRCVTEQECRSMSPPPQPVGAADSTYFRFAIKVPAYKTFNSS
+                     RCLFMCPSGYMEVGNETNATCQPCPRSGCVRECLGGKIDSVATAEQFRGCTHIKGKME
+                     FTLRSSGGKTLSLLESALGEIREIHGCLQVTRSYPLVSLMFLKKLRKIIANPSEDKGE
+                     ALHIINNENLELLWDWSTYGPIEIIGSCYIHSNPKLCYTQLMPLMNMSYPKTNFTELE
+                     VSQDSNGYQASCLPDVLKLSVSELTQIAVVLTWDVYCPDDMRKLLGYSLYFMATEKNV
+                     SLYDQRDACSDIWKVLDKPIEETRKVNRNAKPSHARNKTEVIFNPCADMQPLFYPITQ
+                     LRPYTRYAAYVKTYTTIQDRKGAQSSIIYFRTLPMQPSPPTAVTVELLTPHSIFIKWS
+                     PPTMPNGTIILYHVEVQANSYNRPQILAGNINYCGNPSILANMIKASLEEAPETPEEK
+                     ITGDVKNGVCACKEEAKPSLRFSTRAEEERVDSINFENELQNQVYRKSERVNPKIHKS
+                     IDGTSKVKRSVDHSLNSMLVKLTENNSPRPGLNYSNITDDEGYVKSLYYELDGSTRTL
+                     TVKNMRHFTWYTVNIWACRNKDLNETDPVYAENWCSVRAYNTFRTLELPNADVVSNFQ
+                     VEIMPANKTLPEVNVTWEPPLNPNGFVVAYNVHYSRIEDSAQGPDVGLQSCITVDDYE
+                     ANGHGYVLKTLSPGNYSVKVTPITVSGAGNVSEEIYVFIPERVSESGHAWAWGVGAGG
+                     VVLALLVGAAVWYARRGLMSHAEASKLFASVNPEYVPTVYVPDEWEVTRDSIHFIREL
+                     GQGSFGMVYEGIAKEIVKGKPETRCAIKTVNEHATDRERIEFLNEASVMKAFDTFHVV
+                     RLLGVVSRGQPTLVVMELMERGDLKTYLRSMRPDAEGSLPSSPPVPPTLQNILQMAIE
+                     IADGMAYLSAKKFVHRDLAARNCMVAGDLTVKVGDFGMTRDIYETDYYRKGTKGLMPV
+                     RWMSPESLKDGVFSSSSDAWSYGVVLWEMATLAMQPYQGLSNEQVLRYVVEGGVMERP
+                     EQCPDRLYELMRACWTHRPSARPTFLQLVADLVPHAMPYFRHRSFFHSPQGQELYALQ
+                     RSALDEEQELPEVDVGAVATGSVSNLFGVSGRLASWVRELSSLRSRGSDDAAAEPLQP
+                     LPPPGTSPAPILAPAPAIKGPNGVLRDSHSARFRNH"
+     sig_peptide     221..310
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+     mat_peptide     311..4636
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /product="insulin receptor"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+     misc_feature    473..475
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    950..952
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    1214..1216
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    1265..1267
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    1547..1549
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    1706..1708
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    1727..1729
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    1913..1915
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    2027..2029
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    2282..2284
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    2372..2374
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    2687..2689
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    2711..2713
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    2720..2722
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    2858..2860
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    2981..2983
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    3002..3004
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    3179..3181
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    3224..3226
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="glycosylation site"
+     misc_feature    3293..3349
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="transmembrane region"
+     misc_feature    3461..4276
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+                     /note="tyrosine kinase domain; other site"
+     exon            351..525
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            526..637
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            638..769
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            770..911
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            912..1090
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1091..1258
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1259..1418
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1419..1563
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1564..1778
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1779..1953
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1954..2198
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            2199..2375
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            2376..2569
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            2570..2738
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            2739..2933
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            2934..3088
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            3089..3256
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            3257..3505
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            3506..3594
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            3595..3820
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            3821..4039
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            4040..4120
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            4121..4367
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+     exon            4368..6020
+                     /gene="InR"
+                     /gene_synonym="Bir"
+                     /inference="alignment:Splign:2.1.0"
+ORIGIN      
+        1 gcgcttcgtt cgtggcaact ggtttgtgtg ttgcccgctc tctatcgcgt gtttacaatt
+       61 gtgttgttat tgttttaaca gtctgtgttg tggaaggaac agtgtgtgat tgaaacattg
+      121 tgatatattt gcgtaactga ccgattactc tcaaatagtg gatcgggata ataattcagc
+      181 ctcaataggc gtcgagctca gctcgggtca tgtggtcaac atgctggagg tgcggcgtgg
+      241 cgtgatgagg cgcgcctgtg accgtcttgg ctggcccgcg gtggcgtgcg ctctgctgat
+      301 agcttgcgca cgcacatacg ccggcacaga agttgtacct gcacggggag tatgtccgtc
+      361 aatggaccta cgaaacaatc cggaccagat cagacgtttg gaaggatgtc gggtgatcga
+      421 gggtcagctc agtatcgttc tgatggagcg ggccacaaat aaaatattcg acaacatgag
+      481 cttcccgcag ttaagggaag ttaccggcta tatattgata tataaaacta agggcttgcg
+      541 caatcttggt gatctgttcc caaacctccc cgtggtgcga gggatgcagc tcttcaagga
+      601 tttcgctctt gtaatatttg acaatgaaca tctagaggcg cttggactga attcgttgat
+      661 gaagatcgag cgaggaggcg tccgtattca gcacaacgat cgactctgct atactaacac
+      721 catagactgg tcgcgaatca cacgcgatga tgctgaaatc atcgtcaggt ctaactatga
+      781 taccagactg tgcggcttgt gccccaacgc tcagagtcgc gttgaggagg accatcggca
+      841 atcgttgccg caatgtcccg ctgacaccaa agggaagctg ctttgctggg acgagaaaca
+      901 ctgccaaaag atatgtccga gcgcttgcgg cgaccacggc tgtatgtcga acggcacgtg
+      961 ctgcaactcc gcctgtctcg gaggatgcga cggaccgctc gcgagcaatt gcttcgtctg
+     1021 caagaagttc tcgtttgaat acgggtccga gatgacttgt atggagtcct gccccggtgg
+     1081 tacttacgag ttgtcccgga gatgtgtgac ggaacaggag tgtcgctcga tgtccccccc
+     1141 gccgcagccg gtcggcgccg cggactccac gtacttccgg ttcgcgatca aggtgcccgc
+     1201 ctataagaca ttcaacagca gccgctgtct gttcatgtgt ccgagtggct acatggaggt
+     1261 gggtaacgag actaacgcga cgtgccagcc gtgcccgcgg tccggctgcg tgcgcgagtg
+     1321 cctcggcggg aagatcgact cggtcgccac cgcggagcag ttccggggct gcacgcacat
+     1381 taagggcaaa atggaattca cgcttcgctc cagcggaggt aagacgctat cattgttgga
+     1441 atcagcgctg ggcgaaataa gggagatcca cggatgtctg caagtgacgc ggtcgtatcc
+     1501 tttagtgtcg ttgatgtttt tgaagaaact caggaaaatt atcgcgaatc cttcagaaga
+     1561 taaaggggaa gctctgcata taataaacaa cgagaatcta gagctgctat gggactggtc
+     1621 cacttacgga cctatagaga taatcggtag ctgctacata cattcgaatc ccaagctgtg
+     1681 ctacactcaa ctgatgccgc ttatgaatat gtcgtatccg aaaacgaatt ttaccgaact
+     1741 agaagtgtcc caagacagca acgggtatca ggcatcttgt ctcccggacg tgctgaagct
+     1801 gagcgtgtct gagctaacgc aaatcgcagt ggtactaact tgggatgtgt actgtcccga
+     1861 cgacatgcgc aagctgctcg gatactcgct gtactttatg gccaccgaga agaacgtatc
+     1921 tctgtacgat caacgcgatg cctgttctga tatatggaaa gtactcgaca agccaataga
+     1981 ggagactcgt aaagtgaacc gcaacgcgaa gccctctcac gccaggaaca aaacggaggt
+     2041 tatattcaat ccgtgcgccg acatgcagcc gctgttctat cccatcaccc agctgaggcc
+     2101 gtacaccaga tacgcggcct acgtgaagac ctacaccacg atacaggaca ggaagggggc
+     2161 ccagagctcg atcatttact tcaggacctt gccgatgcaa ccgagtccac ccaccgcggt
+     2221 cactgtggag ctgttgacgc cgcattcgat cttcataaaa tggtcaccgc cgacgatgcc
+     2281 gaacggtacg atcatactgt accacgtgga agtgcaggcc aacagctaca acaggccgca
+     2341 gatacttgcc ggcaacatca attattgtgg caatccgagc atcttggcta acatgatcaa
+     2401 agctagttta gaagaagcgc ccgaaactcc agaggagaaa atcaccggcg acgtgaaaaa
+     2461 tggtgtttgc gcttgcaaag aggaagccaa accgagtctg aggttcagca ctcgcgccga
+     2521 ggaggagagg gtcgacagca tcaatttcga gaacgagttg caaaatcagg tttacaggaa
+     2581 atccgaacga gtgaacccga aaatacacaa gtctatcgac ggaacgagca aagtgaaaag
+     2641 gtcggtcgac cacagcctca acagcatgct cgtcaaactg accgagaaca acagcccgag
+     2701 acccggcctc aactactcca acatcacgga cgacgaaggt tacgtgaaat ctttatacta
+     2761 cgaattggac ggctcgactc ggacgttgac cgtgaagaac atgcgtcact tcacctggta
+     2821 caccgtgaac atatgggcgt gtcgcaacaa ggacttgaac gaaaccgatc cggtctacgc
+     2881 cgagaactgg tgctcggttc gcgcttataa cacgttccgc accttagaac tgccaaacgc
+     2941 agacgtcgtg agtaacttcc aagtggagat aatgccggct aacaagacct tgcccgaagt
+     3001 gaacgtcacg tgggagcctc ccctcaatcc gaacggtttt gtggtcgcgt acaacgtaca
+     3061 ttactcacga atcgaggaca gtgcgcaggg cccggatgta ggcttacaga gctgtataac
+     3121 agtagacgac tacgaagcga acgggcacgg ctacgtgctc aagaccctat ctccgggcaa
+     3181 ctacagcgtc aaggtcacac cgatcaccgt cagcggagca ggaaacgttt ccgaagaaat
+     3241 ctacgtattt ataccggagc gagtatcgga gagcgggcac gcgtgggcgt ggggcgtggg
+     3301 ggcgggcggc gtggtgctgg cgctgctggt gggcgcggcc gtgtggtacg cgcgccgcgg
+     3361 cctcatgtcc cacgccgagg cgagcaagct cttcgccagc gtcaacccgg agtacgtgcc
+     3421 cactgtctac gtgcccgacg agtgggaggt cacacgcgac agcatacact tcatccgaga
+     3481 actcggacag ggatcgtttg gcatggtgta tgaagggatc gccaaggaaa tcgtgaaagg
+     3541 gaaaccggaa actcgctgcg ccatcaaaac tgttaacgag cacgcgacag acagggagcg
+     3601 catcgagttc ctgaacgagg cgtcggtgat gaaggcgttt gacacgttcc acgtggtgcg
+     3661 gctgctgggc gtggtctccc gcggccagcc gaccctcgtc gtgatggagc tcatggagcg
+     3721 cggcgacctc aagacgtacc tgcgctccat gcgacccgac gccgagggct cgctgccctc
+     3781 cagcccgccc gtgccgccca cgctgcagaa catcttgcag atggccatag aaatagccga
+     3841 cgggatggca tatttgtcgg caaaaaaatt cgtgcaccgc gacttagcgg cgcgcaactg
+     3901 tatggtcgcc ggcgacctca ccgtcaaagt tggggacttc ggcatgacca gagatattta
+     3961 tgagactgat tattatagga aaggcaccaa aggcctaatg ccggtgcggt ggatgagccc
+     4021 cgaaagctta aaagacgggg tcttttccag tagcagtgac gcttggagtt acggggttgt
+     4081 tttgtgggag atggcaacgc tcgcgatgca accctaccag gggttgtcga acgagcaggt
+     4141 gctgcggtac gtggtggagg gcggcgtgat ggagcggccg gagcagtgcc cggaccggct
+     4201 gtacgagctc atgcgcgcgt gctggacgca ccgcccctcc gcgcgcccca ccttcctgca
+     4261 gctggtggcc gacctggtgc cgcacgccat gccctacttc cgccaccgca gcttcttcca
+     4321 ctcgccgcag ggccaggagt tgtacgctct ccagcgatct gcgctagatg aggaacaaga
+     4381 gctcccggag gtggatgtgg gtgcggtggc gacgggctcc gtgtcgaacc tgttcggtgt
+     4441 gtcggggcgg ctcgcgtcct gggtgcggga gctgtcctct ctgcggtccc ggggctccga
+     4501 cgacgcggcg gccgagcctc tgcagcccct ccctccgccc ggcacctccc ccgcccccat
+     4561 actcgcaccc gcaccggcca tcaagggacc caacggcgta ctgcgcgact cgcactctgc
+     4621 ccgttttcga aaccattgat acccgaatcg aacgaaactc ctcccatctg taaacgaaca
+     4681 tgcgtaccct tagcccgaaa caatgtccct acgtatatat gacgatcctg ggactgcgta
+     4741 agggtacagc gcgatggtgg cggagtcgcg ccggaagggg ggtaggtgta gggagccgcg
+     4801 cgcgtgcttc cgcgaaacct ctatctactt caggtcggac gtctcggcgc ccgactcatc
+     4861 gaatcatagt ttctaagcgt agctagtaaa atcttcgatg cgtttttttt atttattgaa
+     4921 tacgagtacg tctccacgcg gacggcgatg taaatattaa cttgtagtac ggatcggagt
+     4981 gttgccggac ggtgggctcg gttcgtgtcg cgactgaccc ggggggcgcg gcggggacgg
+     5041 acgcgggtgt agatattgta tttaaaagtt cgtctccata cttgaccgcc ctctacactg
+     5101 tcactgtgtg acttcaatga gaccgaaccg aggtcgtcga ctctgttttt ttttttcgat
+     5161 actagtttaa atttatccct taacgaggac cgttcctcca tcctctctgc atttattaca
+     5221 ttcatttatt gcacaaggag cgtgccagca gagaagaatg ttcgagttaa aaagtaaatt
+     5281 aaaattttaa gtgcacaatt tgaaaataac taaacaacag tagtagtatc gaacaggaaa
+     5341 cttaataaaa ttcggtgaga atatgtttta gcatcggaag cgtatattaa acgtttgata
+     5401 cgacgcctct cgatatttat cctataaatt gtacctcatt acgatagttg taacagtgtc
+     5461 ctttgacata gcctattaat gttaagacta ccctataaga tgtatagtgt gtttaatatg
+     5521 ataatattgg tgcgtgagag taaatttgta caaattaatt taattaatcg atattcggac
+     5581 cgaggggcga ggggcgggcg gcgcgggggg cggccccgct gcgttgtcat gttgttattg
+     5641 ttgttgcaac actttttgtt gaaagtgtaa acgtagcggg tccgtcactc gcgtgcttgt
+     5701 cgccggattc gcgcaacact ttataatact cacataaaaa aaatgttcca tactgacaat
+     5761 cgaaaaaata gtactttgat tattgctgtt ataaaaatga tataggtaca ttacgattaa
+     5821 atatctattt ataattaaat aaacaaattc gatttacata caaattatac cgtgtagttt
+     5881 taaatagatt ttgtgctgtt gaaaaaaact tatataaaac tttaactgaa acacgccaat
+     5941 atttttttcc acatcaaaca tgagtgtaaa agttactata attatttaat atcatataaa
+     6001 ataggtaaaa caaataatac
+//
+

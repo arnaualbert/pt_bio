@@ -1,0 +1,61 @@
+LOCUS       AJ844652                 726 bp    mRNA    linear   MAM 26-JUL-2016
+DEFINITION  Ovis aries partial mRNA for insulin receptor (ir gene).
+ACCESSION   AJ844652
+VERSION     AJ844652.1
+KEYWORDS    insulin receptor; ir gene.
+SOURCE      Ovis aries (sheep)
+  ORGANISM  Ovis aries
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Artiodactyla; Ruminantia;
+            Pecora; Bovidae; Caprinae; Ovis.
+REFERENCE   1
+  AUTHORS   Barber,M.C.
+  TITLE     Expression of the ovine insulin receptor gene
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 726)
+  AUTHORS   Barber,M.C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-OCT-2004) Barber M.C., Cell Biochemistry Group,
+            Hannah Research Institute, Mauchline Road, KA6 5HL, UNITED KINGDOM
+FEATURES             Location/Qualifiers
+     source          1..726
+                     /organism="Ovis aries"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9940"
+                     /tissue_type="adipose tissue"
+     gene            <1..>726
+                     /gene="ir"
+     CDS             <1..>726
+                     /gene="ir"
+                     /codon_start=1
+                     /product="insulin receptor"
+                     /protein_id="CAH59901.1"
+                     /db_xref="GOA:Q5QR92"
+                     /db_xref="InterPro:IPR000494"
+                     /db_xref="InterPro:IPR006211"
+                     /db_xref="InterPro:IPR006212"
+                     /db_xref="InterPro:IPR009030"
+                     /db_xref="InterPro:IPR020685"
+                     /db_xref="InterPro:IPR020710"
+                     /db_xref="UniProtKB/TrEMBL:Q5QR92"
+                     /translation="PEDFRDLSFPQLIMITDYLLLFRVYGLESLKDLFPNLTVIRGSR
+                     LFFNYALVIFEMVHLKELGLYSLMNITRGSVRIEKNNELCYLATIDWSRILDSVEDNY
+                     IVLNKDDNEECGDICPGTAKGKTNCPATVINGQFVERCWTHSHCQKVCPTICKSHGCT
+                     SEGLCCHSECLGNCSEPDDPTKCVACRNFYLDGRCVETCPPPYYHFQDWRCVNFSFCQ
+                     DLHNKCRTSRRQGCHQYVIHNNKC"
+ORIGIN      
+        1 cccgaagatt tccgagacct cagtttcccc caactcatca tgatcactga ttacttgctg
+       61 ctcttccggg tctatgggct ggagagcctg aaggacttgt tccccaacct cacggtcatc
+      121 cgaggctcgc gcctcttctt taattatgca ctggtcatct ttgagatggt tcacctgaag
+      181 gagcttggcc tctacagcct gatgaacatc acccgggggt ctgtccgcat cgagaagaac
+      241 aatgaactct gctacctggc caccatcgac tggtctcgaa tcctggattc cgtggaggat
+      301 aattacatcg tgctgaacaa agacgacaat gaggagtgtg gggacatttg tccaggcacc
+      361 gccaagggca agaccaactg ccctgccact gtcatcaacg ggcagtttgt ggagcggtgc
+      421 tggacacaca gccactgcca gaaagtgtgt ccgactatct gtaagtcaca tggctgcacc
+      481 tctgagggtc tctgctgcca cagcgagtgc ttgggcaact gctcagagcc cgacgacccc
+      541 accaagtgcg tggcctgtcg caacttctac ctggacggca ggtgcgtgga gacctgcccg
+      601 cccccttact accacttcca agactggcgc tgcgtgaact tcagcttctg ccaggacctg
+      661 cacaacaaat gcaggacctc tcggaggcaa ggctgccacc aatacgtcat tcacaacaac
+      721 aagtgc
+//
+

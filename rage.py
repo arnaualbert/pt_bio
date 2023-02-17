@@ -19,6 +19,7 @@ from Bio.Seq        import Seq
 from Bio.SeqFeature import SeqFeature
 from Bio.Align      import PairwiseAligner, PairwiseAlignments, PairwiseAlignment, substitution_matrices
 from Bio.Align.substitution_matrices import Array
+import matplotlib.pyplot as plt
 
 Entrez.email = 'carde602@gmail.com'
 
@@ -131,7 +132,6 @@ def get_dict_of_cds(gb_files):
                         if feature.type == "CDS":
                             cds = feature.qualifiers["translation"]
                             list_of_cds_seq.append(cds)
-                    print(f'{name} have: {len(list_of_cds_seq)} CDS')
                     cds_list.append(list_of_cds_seq[0])
                     list_elem_one = list_of_cds_seq[0]
                     cds = list_elem_one[0]
@@ -159,17 +159,8 @@ def get_alinaments_with_specific_virus(virus_to_compare,virus_list_to_compare):
         aligner = PairwiseAligner()
         score = aligner.score(virus_to_compare,virus)
         list_of_scores.append(score)
-        print(f'socre: {score} comparing {virus} with {virus_to_compare}')
     return list_of_scores
 
-# def get_list_of_virus_to_compare(key_virus_good,complete_dict_of_virus_to_compare):
-#     print(len(list(complete_dict_of_virus_to_compare.values())))
-#     new_dict = complete_dict_of_virus_to_compare
-#     del new_dict[key_virus_good]
-#     list_virus_to_compare = list(new_dict.values())
-#     print(len(list_virus_to_compare))
-#     return list_virus_to_compare
-#    pass
 def get_list_of_virus_to_compare(key_virus_good,complete_dict_of_virus_to_compare):
     print(len(list(complete_dict_of_virus_to_compare.values())))
     new_dict = complete_dict_of_virus_to_compare
@@ -178,25 +169,37 @@ def get_list_of_virus_to_compare(key_virus_good,complete_dict_of_virus_to_compar
     print(len(list_virus_to_compare))
     return list_virus_to_compare
 
-def get_alinaments_with_specific_virus_with_dict(virus_to_compare,virus_dict_to_compare):
-    #list_of_scores = []
+def get_alinaments_with_specific_virus_with_dict(virus_to_compare: str ,virus_dict_to_compare: dict):
+    """
+    Get the list of scores of the alignment of a virus to a virus
+    input: virus_to_compare: str (virus to compare)
+    output: list_of_scores: dict (list of scores)
+    """
     list_of_socres = {}
     list_of_names_of_virus = list(virus_dict_to_compare.keys())
     list_of_cds_to_compare = list(virus_dict_to_compare.values())
     for index, name in enumerate(list_of_names_of_virus):
-        print(f'comparing {name} with {list_of_cds_to_compare[index]}')
         aligner = PairwiseAligner()
+        blosum62_matrix: Array = substitution_matrices.load('BLOSUM62')
+        aligner.substitution_matrix = blosum62_matrix
         score = aligner.score(virus_to_compare,list_of_cds_to_compare[index])
         list_of_socres[name] = score
     return list_of_socres
 
-# def rename_files(directory_path):
-#     list_of_files = get_files_in_dir(directory_path)
-#     list_of_parser_files = []
-#     for file in list_of_files:
-#         file_parsed:GenBankIterator = SeqIO.parse(file,'gb')
-#         list_of_parser_files.append(file_parsed)
-#     return list_of_parser_files
+def get_percentage(dict_of_scores):
+    scores = list(dict_of_scores.values())
+    max_value = max(scores)
+    list_percentage = []
+    for value in scores:
+        if value == max_value:
+            percentage = 100
+            list_percentage.append(percentage)
+        else:
+            percentage = round((value/max_value)*100)
+            list_percentage.append(percentage)
+    return list_percentage
+
+    
 
 # Main
 # ---------------------------------------------------------------------
@@ -207,7 +210,15 @@ if this_module == main_module:
 
     ### LIST OF TERMS ###
 
-    list_of_terms = ['Rabies lyssavirus isolate 18018LIB, complete genome','ebolavirus, complete genome','Marburg marburgvirus isolate MARV001, complete genome','Nipah virus, complete genome','Variola virus[ORGN]', 'TREPONEMA PALLIDUM TRIPLET ','Kyasanur forest disease virus isolate W6204 NS5 gene, partial cds','Hepatitis B virus isolate I172, complete genome','Human rhinovirus B strain KR2629 polyprotein gene, partial cds','Adenovirus type 2, complete genome']
+    #list_of_terms = ['Rabies lyssavirus isolate 18018LIB, complete genome','ebolavirus, complete genome','Marburg marburgvirus isolate MARV001, complete genome','Nipah virus, complete genome','Variola virus[ORGN]', 'TREPONEMA PALLIDUM TRIPLET ','Kyasanur forest disease virus isolate W6204 NS5 gene, partial cds','Hepatitis B virus isolate I172, complete genome','Human rhinovirus B strain KR2629 polyprotein gene, partial cds','Adenovirus type 2, complete genome']
+
+    #work list_of_terms = ['Homo sapiens insulin (INS) gene, complete cds','Octodon degus insulin mRNA, complete cds','Aplysia californica insulin precursor (PIN), mRNA']
+
+    list_of_terms = ['Homo sapiens insulin receptor (INSR) gene, complete cds','Macaca mulatta insulin receptor mRNA, partial cds, exons 9 - 12',
+                     'Ovis aries partial mRNA for insulin receptor (ir gene)','Bos taurus partial mRNA for insulin receptor',
+                     'Bubalus bubalis mRNA for insulin receptor, partial','Rattus norvegicus insulin receptor gene, partial exon 18, exon 19 and partial cds',
+                     'Lepisma saccharina insulin receptor (InR) mRNA, partial cds','Bombyx mori insulin receptor (InR), mRNA',
+                     'Oreochromis niloticus insulin receptor mRNA, partial cds']
 
     ### PATH OF THE FOLDER THAT CONTAINS THE XML FILES AND THE GB FILES ###
 
@@ -249,175 +260,16 @@ if this_module == main_module:
     if num_of_gb_files_before_search_in_ncbi != 0:
         cds_dict = get_dict_of_cds(gb_files)
         accesion_numbers = get_accession_number(gb_files)
+        good_virus = 'Homo_sapiens'
+        cds_virus = cds_dict['Homo_sapiens']
+        socores = get_alinaments_with_specific_virus_with_dict(cds_virus,cds_dict)
+        per = get_percentage(socores)
         results = pd.DataFrame()
         results['virus'] = list(cds_dict.keys())
-        results['accession_number'] = accesion_numbers 
+        results['accession_number'] = accesion_numbers
+        results['scores'] = list(socores.values()) 
+        results['percentage'] = per
+        results.to_csv('practica_2/results/infor.csv', index=False)
+        plt.bar(results['virus'],results['percentage'])
+        plt.savefig('practica_2/results/infor.png')
         print(results)
-
-
-
-
-    good_virus = 'Rhinovirus_B'
-    cds_virus = cds_dict['Rhinovirus_B']
-    # print(len(list(cds_dict.values())))
-
-    # if good_virus in list(cds_dict.values()):
-    #     dict_without_good_virus = cds_dict
-    #     del dict_without_good_virus["Rhinovirus_B"]
-    #     print(len(dict_without_good_virus))
-    #     print(type(dict_without_good_virus))
-
-
-    #list_without_good_virus = list(dict_without_good_virus.values())
-    #print(list_without_good_virus)
-
-
-
-
-
-    # good_virus = 'Rhinovirus_B'
-    good_list = get_list_of_virus_to_compare(good_virus,cds_dict)
-    socores = get_alinaments_with_specific_virus_with_dict(cds_virus,good_list)
-    print(socores)
-    # print(type(good_list))
-    # print(len(good_list))
-
-    #get_alinaments_with_specific_virus(good_virus,list_without_good_virus)
-    
-    
-        # for value in list_without_good_virus:
-    #     pass
-    # for cds in cds_dict:
-    
-    
-    # aligner = PairwiseAligner()
-    # score = aligner.score(good_virus,list_without_good_virus['Nipah_henipavirus'])
-    # print(f'socre: {score}')
-    # alignment: PairwiseAlignment
-    # for alignment in alignments:
-    #     print(alignment)
-
-    # print(cds_dict.keys)
-    # for key in cds_dict.keys():
-    #     print(key)
-    # list_of_gb = get_files_in_dir(gb_files)
-    # for file in list_of_gb:
-    #     record_iter: GenBankIterator = SeqIO.parse(file, 'gb')
-    #     for record in record_iter:
-    #         if record.name:
-    #             print(record.name)
-
-
-
-
-
-
-#############################old get dic of cds#############################
-        # print(cds_dict)
-        # list_of_gb = get_files_in_dir(gb_files)
-        # cds_list = []
-        # cds_dict = {}
-        # for file in list_of_gb:
-        #     record_iter: GenBankIterator = SeqIO.parse(file, 'gb')
-        #     for record in record_iter:
-        #         if record.features:
-        #             list_of_cds_seq = []
-        #             for feature in record.features:
-        #                 if feature.type == "source":
-        #                     name_list = feature.qualifiers["organism"]
-        #                     name = name_list[0]
-        #                     reg_white_space = r'\s'
-        #                     pat_white_space = re.compile(reg_white_space)
-        #                     name = pat_white_space.sub('_', name)
-        #                 if feature.type == "CDS":
-        #                         # print(feature.location)
-        #                         # print(feature.qualifiers["protein_id"])
-        #                         # print(feature.location.extract(record).seq)
-        #                         # list_of_cds_seq = []
-        #                     cds = feature.qualifiers["translation"]
-        #                     list_of_cds_seq.append(cds)
-        #                     # cds_list.append(cds)
-        #             print(f'{name} have: {len(list_of_cds_seq)} CDS')
-        #             cds_list.append(list_of_cds_seq[0])
-        #             list_elem_one = list_of_cds_seq[0]
-        #             cds = list_elem_one[0]
-        #             cds_dict[name] = cds
-        #             return cds_dict
-        # print(cds_list)
-        # print(len(cds_list))
-        # print(len(cds_dict))
-
-
-
-
-
-
-    # if num_of_gb_files_before_search_in_ncbi > 0:
-        # list_of_gb = get_files_in_dir(gb_files)
-        # rename_files_gb(list_of_gb)
-        # print('excecuted: rename_files_gb')
-
-    # list_of_gb = get_files_in_dir(gb_files)
-    # for file in list_of_gb:
-    #     cds_list = []
-    #     record_iter: GenBankIterator = SeqIO.parse(file, 'gb')
-    #     for record in record_iter:
-    #         if record.features:
-    #             for feature in record.features:
-    #                 if feature.type == "CDS":
-    #                     cds = feature.qualifiers["translation"][0]
-    #                     cds_list.append(cds)
-    # print(cds_list)
-
-    
-
-    
-
-
-
- 
-    # GET NAME OF THE ORGANISM
-    # for rec in SeqIO.parse('/bio/practica_2/gb_files/EU293337.1.gb','gb'):
-    #     if rec.features:
-    #         for feature in rec.features:
-    #             if feature.type == "source":
-    #                 name_list = feature.qualifiers["organism"]
-    #                 name = name_list[0]
-    #                 print(name)
-    #                 print(type(name))
-
-
-    ################# GET CDS (MAKE A FUNCTION OG THIS) ###################################
-    ##### https://stackoverflow.com/questions/23333123/extracting-cds-sequences-in-biopython
-    # for rec in SeqIO.parse('/bio/practica_2/gb_files/EU293337.1.gb','gb'):
-    #     if rec.features:
-    #         for feature in rec.features:
-    #             if feature.type == "CDS":
-    #                 cds = feature.qualifiers["translation"]
-    #                 print(cds)
-    #                 print(type(cds))
-
-
-
-    # features_list = []
-    # for record in record_list:
-    #     # print(record.features)
-    #     # print()
-    #     features_list.append(record.features)
-    # print(features_list)
-
-    # for features in features_list:
-    #     if features.type == "CDS":
-    #         print(features.location)
-    #         print(features.qualifiers["protein_id"])
-    #         print(features.location.extract(rec).seq)
-
-
-
-    # parsed_files = rename_files(data)
-    # record_list: list[SeqRecord] = list(parsed_files)
-    # print(parsed_files)
-    # for record in record_list:
-    #     print(record)
-    #     for rec in record:
-    #         print(rec)

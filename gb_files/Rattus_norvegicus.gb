@@ -1,0 +1,56 @@
+LOCUS       RNU80633                 367 bp    DNA     linear   ROD 26-JUL-2016
+DEFINITION  Rattus norvegicus insulin receptor gene, partial exon 18, exon 19
+            and partial cds.
+ACCESSION   U80633
+VERSION     U80633.1
+KEYWORDS    .
+SOURCE      Rattus norvegicus (Norway rat)
+  ORGANISM  Rattus norvegicus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia; Myomorpha;
+            Muroidea; Muridae; Murinae; Rattus.
+REFERENCE   1  (bases 1 to 367)
+  AUTHORS   Seino,S., Seino,M. and Bell,G.I.
+  TITLE     Human insulin-receptor gene. Partial sequence and amplification of
+            exons by polymerase chain reaction
+  JOURNAL   Diabetes 39 (1), 123-128 (1990)
+   PUBMED   2210055
+REFERENCE   2  (bases 1 to 367)
+  AUTHORS   Liu,Y. and Tam,J.W.O.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-NOV-1996) Biochemistry, The University of Hong Kong,
+            5 Sassoon Road, Hong Kong
+FEATURES             Location/Qualifiers
+     source          1..367
+                     /organism="Rattus norvegicus"
+                     /mol_type="genomic DNA"
+                     /strain="Sprague-Dawley"
+                     /db_xref="taxon:10116"
+     misc_feature    <1..>367
+                     /note="insulin-receptor"
+     CDS             join(<1..20,195..>354)
+                     /note="tyrosine kinase"
+                     /codon_start=3
+                     /product="insulin receptor"
+                     /protein_id="AAB38746.1"
+                     /translation="LRPDAENNPGRPPPTLQEMIQMTAEIADGMAYLNAKKFVHRDLA
+                     ARNCMVAHDFTVKIG"
+     exon            <1..20
+                     /note="insulin receptor"
+                     /number=18
+     intron          21..194
+                     /note="insulin receptor"
+                     /number=18
+     exon            195..354
+                     /note="insulin receptor"
+                     /number=19
+ORIGIN      
+        1 ctctgcggcc cgatgctgag gtaagctgcc tccaggcccc ttagcaggcc cccgatctaa
+       61 gtatacgata aacgctaacc catgtttgac tttagaatga ccctggctac acccccaagc
+      121 ccccgacaca caccctgtaa gagatgattt agttggaatc agagtgctaa ctgcaaccca
+      181 tgttttgact ttagaacaac ccaggccgtc ctccccctac cttgcaagaa atgattcaga
+      241 tgacagcaga aattgccgat ggcatggcat acttgaacgc caagaagttt gtgcaccggg
+      301 acctggcagc tcggaactgc atggttgccc atgattttac tgtcaaaatc ggaggtgtgt
+      361 cttcaaa
+//
+

@@ -1,0 +1,277 @@
+LOCUS       NM_174576               3705 bp    mRNA    linear   MAM 20-DEC-2022
+DEFINITION  Bos taurus phosphoinositide-3-kinase regulatory subunit 2 (PIK3R2),
+            mRNA.
+ACCESSION   NM_174576
+VERSION     NM_174576.2
+KEYWORDS    RefSeq.
+SOURCE      Bos taurus (cattle)
+  ORGANISM  Bos taurus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Artiodactyla; Ruminantia;
+            Pecora; Bovidae; Bovinae; Bos.
+REFERENCE   1  (bases 1 to 3705)
+  AUTHORS   Zhao K, Liu HY, Zhou MM, Zhao FQ and Liu JX.
+  TITLE     Insulin stimulates glucose uptake via a phosphatidylinositide
+            3-kinase-linked signaling pathway in bovine mammary epithelial
+            cells
+  JOURNAL   J Dairy Sci 97 (6), 3660-3665 (2014)
+   PUBMED   24731625
+REFERENCE   2  (bases 1 to 3705)
+  AUTHORS   Zimin AV, Delcher AL, Florea L, Kelley DR, Schatz MC, Puiu D,
+            Hanrahan F, Pertea G, Van Tassell CP, Sonstegard TS, Marcais G,
+            Roberts M, Subramanian P, Yorke JA and Salzberg SL.
+  TITLE     A whole-genome assembly of the domestic cow, Bos taurus
+  JOURNAL   Genome Biol 10 (4), R42 (2009)
+   PUBMED   19393038
+REFERENCE   3  (bases 1 to 3705)
+  AUTHORS   Hale BG, Batty IH, Downes CP and Randall RE.
+  TITLE     Binding of influenza A virus NS1 protein to the inter-SH2 domain of
+            p85 suggests a novel mechanism for phosphoinositide 3-kinase
+            activation
+  JOURNAL   J Biol Chem 283 (3), 1372-1380 (2008)
+   PUBMED   18029356
+  REMARK    GeneRIF: These data suggest a model by which NS1 activates PI3K
+            catalytic activity by masking a normal regulatory element specific
+            to the p85beta inter-SH2 domain.
+REFERENCE   4  (bases 1 to 3705)
+  AUTHORS   Hale BG, Jackson D, Chen YH, Lamb RA and Randall RE.
+  TITLE     Influenza A virus NS1 protein binds p85beta and activates
+            phosphatidylinositol-3-kinase signaling
+  JOURNAL   Proc Natl Acad Sci U S A 103 (38), 14194-14199 (2006)
+   PUBMED   16963558
+  REMARK    GeneRIF: Results report that influenza A virus NS1 binds directly
+            to p85beta, a regulatory subunit of phosphatidylinositol-3-kinase
+            (PI3K), but not to the related p85alpha subunit.
+REFERENCE   5  (bases 1 to 3705)
+  AUTHORS   Rajala RV, Elliott MH, McClellan ME and Anderson RE.
+  TITLE     Localization of the insulin receptor and phosphoinositide 3-kinase
+            in detergent-resistant membrane rafts of rod photoreceptor outer
+            segments
+  JOURNAL   Adv Exp Med Biol 572, 491-497 (2006)
+   PUBMED   17249614
+  REMARK    GeneRIF: insulin receptor and phosphoinositide 3-kinase in
+            detergent-resistant membrane rafts of rod photoreceptor outer
+            segments
+REFERENCE   6  (bases 1 to 3705)
+  AUTHORS   Dhand R, Hara K, Hiles I, Bax B, Gout I, Panayotou G, Fry MJ,
+            Yonezawa K, Kasuga M and Waterfield MD.
+  TITLE     PI 3-kinase: structural and functional analysis of intersubunit
+            interactions
+  JOURNAL   EMBO J 13 (3), 511-521 (1994)
+   PUBMED   8313896
+REFERENCE   7  (bases 1 to 3705)
+  AUTHORS   Panayotou G, Bax B, Gout I, Federwisch M, Wroblowski B, Dhand R,
+            Fry MJ, Blundell TL, Wollmer A and Waterfield MD.
+  TITLE     Interaction of the p85 subunit of PI 3-kinase and its N-terminal
+            SH2 domain with a PDGF receptor phosphorylation site: structural
+            features and analysis of conformational changes
+  JOURNAL   EMBO J 11 (12), 4261-4272 (1992)
+   PUBMED   1330535
+REFERENCE   8  (bases 1 to 3705)
+  AUTHORS   Otsu M, Hiles I, Gout I, Fry MJ, Ruiz-Larrea F, Panayotou G,
+            Thompson A, Dhand R, Hsuan J, Totty N et al.
+  TITLE     Characterization of two 85 kd proteins that associate with receptor
+            tyrosine kinases, middle-T/pp60c-src complexes, and PI3-kinase
+  JOURNAL   Cell 65 (1), 91-104 (1991)
+   PUBMED   1707345
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence was derived from BC118113.1.
+            
+            On Jul 14, 2006 this sequence version replaced NM_174576.1.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: BC118113.1, GGVA01014515.1
+                                           [ECO:0000332]
+            RNAseq introns              :: mixed/partial sample support
+                                           SAMN03145412, SAMN03145413
+                                           [ECO:0000350]
+            ##Evidence-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..3705
+                     /organism="Bos taurus"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9913"
+                     /chromosome="7"
+                     /map="7"
+                     /breed="L1 Hereford"
+     gene            1..3705
+                     /gene="PIK3R2"
+                     /note="phosphoinositide-3-kinase regulatory subunit 2"
+                     /db_xref="BGD:BT13734"
+                     /db_xref="GeneID:282308"
+                     /db_xref="VGNC:VGNC:52862"
+     exon            1..75
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            76..819
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     misc_feature    438..440
+                     /gene="PIK3R2"
+                     /note="upstream in-frame stop codon"
+     CDS             498..2672
+                     /gene="PIK3R2"
+                     /note="phosphoinositide-3-kinase, regulatory subunit,
+                     polypeptide 2 (p85 beta); ptdIns-3-kinase p85-beta;
+                     phosphoinositide-3-kinase, regulatory subunit 2 (beta);
+                     PI3-kinase p85 subunit beta; PI3-kinase subunit p85-beta;
+                     PI3K regulatory subunit beta; PI3-kinase regulatory
+                     subunit beta; ptdIns-3-kinase regulatory subunit beta;
+                     ptdIns-3-kinase regulatory subunit p85-beta;
+                     phosphatidylinositol 3-kinase 85 kDa regulatory subunit
+                     beta; phosphoinositide-3-kinase, regulatory subunit 2 (p85
+                     beta)"
+                     /codon_start=1
+                     /product="phosphatidylinositol 3-kinase regulatory subunit
+                     beta"
+                     /protein_id="NP_777001.1"
+                     /db_xref="BGD:BT13734"
+                     /db_xref="GeneID:282308"
+                     /db_xref="VGNC:VGNC:52862"
+                     /translation="MAGPEGFQYRALYPFRRERPEDLELLPGDVLVVSRAALQALGVA
+                     EGNERCPQSVGWMPGLNERTRQRGDFPGTYVEFLGPVALARPGPRPRGPRPLPARPRD
+                     GPPEPGLTLPDLPEQFSPPDVAPPILVKLVEAIERTGLDSYRPEPPAVRTDWSLSDVE
+                     QWDAAALSDGVKGFLLALPAPLVTPEAAAEAHRALREAAGPVGPALEPPTLPLHHALT
+                     LRFLLQHLGRVAGRAPAPGPAVRALGATFGPLLLRAPPPPSPPPGGAPDGTEPTPDFP
+                     ALLVEKLLQEHLEEQEVAPPALPPKPPKTKPAPTGLANGGSPPSLQDAEWYWGDISRE
+                     EVNEKLRDTPDGTFLVRDASSKIQGEYTLTLRKGGNNKLIKVFHRDGHYGFSEPLTFC
+                     SVVDLITHYRHESLAQYNAKLDTRLLYPVSKYQQDQIVKEDSVEAVGAQLKVYHQQYQ
+                     DKSREYDQLYEEYTRTSQELQMKRTAIEAFNETIKIFEEQGQTQEKCSKEYLERFRRE
+                     GNEKEMQRILLNSERLKSRIAEIHESRTKLEQELRAQASDNREIDKRMNSLKPDLMQL
+                     RKIRDQYLVWLTQKGARQKKINEWLGIKNETEDQYSLMEDEDDLPHHEERTWYVGKIN
+                     RTQAEEMLSGKRDGTFLIRESSQRGCYACSVVVDGDTKHCVIYRTATGFGFAEPYNLY
+                     GSLKELVLHYQHASLVQHNDALTVTLAHPVRAPGPGPPPAAR"
+     misc_feature    738..851
+                     /gene="PIK3R2"
+                     /note="propagated from UniProtKB/Swiss-Prot (P23726.1);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    1245..1322
+                     /gene="PIK3R2"
+                     /note="propagated from UniProtKB/Swiss-Prot (P23726.1);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    1365..1454
+                     /gene="PIK3R2"
+                     /note="propagated from UniProtKB/Swiss-Prot (P23726.1);
+                     Region: Disordered. /evidence=ECO:0000256|SAM:MobiDB-lite"
+     misc_feature    1875..1877
+                     /gene="PIK3R2"
+                     /note="Phosphotyrosine.
+                     /evidence=ECO:0000250|UniProtKB:O00459; propagated from
+                     UniProtKB/Swiss-Prot (P23726.1); phosphorylation site"
+     misc_feature    2298..2300
+                     /gene="PIK3R2"
+                     /note="Phosphotyrosine.
+                     /evidence=ECO:0000250|UniProtKB:O00459; propagated from
+                     UniProtKB/Swiss-Prot (P23726.1); phosphorylation site"
+     misc_feature    2448..2450
+                     /gene="PIK3R2"
+                     /note="Phosphotyrosine.
+                     /evidence=ECO:0000250|UniProtKB:O00459; propagated from
+                     UniProtKB/Swiss-Prot (P23726.1); phosphorylation site"
+     exon            820..912
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            913..954
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            955..1086
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1087..1300
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1301..1386
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1387..1495
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1496..1594
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1595..1775
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1776..1901
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            1902..2044
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            2045..2221
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            2222..2293
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            2294..2464
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+     exon            2465..3674
+                     /gene="PIK3R2"
+                     /inference="alignment:Splign:2.1.0"
+ORIGIN      
+        1 ccgcggtgaa gccacgggtc tggctcggtt cggcgtgacg gtggccgcgg cggcagcggt
+       61 ggcggctacg accaggtcgg tgtcccgagc cgagcatggt gacagcccgt gccctcggcc
+      121 ccctcgcctg gcgcagctgg aagagccgcc agcctcggga gccgatggcc ccccacgtga
+      181 gggagtgagc gacccggccc cgccctacgg attgaggggg gacgcagcag ctgagtgacc
+      241 tgagatcagg ctgccgagcc cctcccacca gttgacgaat ggtggacaag caacgagtga
+      301 cccttgttag ggtcatgaaa taatggtggg aagcaaagcg tgagcatccc gggtggtcac
+      361 ctgtaacttc ttggtgaaaa tcgaagcctg agtccccaag ccctcccagc ggaccctccc
+      421 ggccccccac ccggggctga tggggccact ggggccccaa gcagccacct gaccatccag
+      481 accccacccc gccagccatg gctggccctg agggcttcca ataccgtgca ttgtacccat
+      541 tccgccggga gaggccggag gacctggagc tgcttccggg tgatgtgctg gtggtgagca
+      601 gggccgccct gcaggcgctg ggcgtggccg agggcaacga gcgctgcccg cagagcgtag
+      661 gctggatgcc tggcctcaat gagcgtaccc ggcagcgcgg cgacttccct ggcacctatg
+      721 tggagttcct ggggcccgtg gccctggccc ggcctggccc tcgcccacgt ggcccccgcc
+      781 cactgcccgc caggccccga gacgggcccc ctgagccagg ccttacactc cctgacctac
+      841 ccgagcagtt ctccccccct gatgtggctc cccctatcct ggtgaagctg gtggaggcca
+      901 ttgaacggac agggctggac agctacaggc ctgagccacc cgccgtgcgc acagactggt
+      961 ccctgagtga tgtggagcag tgggatgcgg cagccctgtc agatggtgtg aaaggcttcc
+     1021 tgctggcgct gccagcgccc ctcgtgacac ccgaggctgc ggccgaggca caccgagccc
+     1081 tgcgggaggc tgcggggccc gtggggccgg cgttggagcc cccgacgctg ccactgcacc
+     1141 atgcgctcac gctgcgcttc ctgctccagc acctgggccg ggtggccggg cgcgccccag
+     1201 ccccgggccc cgcggtccgt gccctgggcg ccaccttcgg gccgctgctg ctacgcgcgc
+     1261 cgccgccgcc ctctccgccg ccagggggcg cacccgacgg gaccgagccc acccccgact
+     1321 ttcctgcgct gctggtggag aagctgcttc aggaacatct ggaggagcag gaggttgccc
+     1381 ccccagcact gccaccaaaa ccccccaaga caaagccagc ccccacaggc ctggccaatg
+     1441 ggggcagccc accctccctg caggacgccg agtggtactg gggtgacatc tccagggagg
+     1501 aggtaaacga gaaactgcgg gacacgcccg atggcacctt cctggtccga gatgcctcca
+     1561 gcaagatcca gggagagtac acgctgaccc tcaggaaagg cggaaacaac aagctgatca
+     1621 aggtcttcca ccgagatggg cactacggct tctcggagcc gctcaccttc tgctctgtcg
+     1681 tggacctcat cacccactac cgccatgagt cactggccca gtacaacgcc aagctggaca
+     1741 cgcggctcct ctacccagtg tccaagtacc aacaggacca gatcgtcaag gaggacagcg
+     1801 tggaggcggt gggtgcccag ctcaaggtct accaccagca gtaccaggac aagagccgcg
+     1861 agtacgacca gctctacgag gagtacacac gcacctccca ggaactgcag atgaagcgca
+     1921 cagccatcga agccttcaat gagaccatca agatctttga agagcagggc cagacgcagg
+     1981 agaagtgcag caaggaatac ctggagcgct tccgacgtga gggcaatgag aaagaaatgc
+     2041 agaggatcct gctaaactcg gagcggctca agtctcgcat tgccgagatc cacgagagtc
+     2101 gcacaaagct ggagcaggag ctgcgggcac aggcctctga caaccgagag atcgacaagc
+     2161 gcatgaacag cctcaagcca gacctcatgc agttgcgcaa gatccgagac cagtaccttg
+     2221 tgtggctcac tcagaagggt gcccggcaga agaaaatcaa cgaatggttg gggatcaaga
+     2281 acgagactga ggaccagtac tcactgatgg aggatgagga tgacctcccc caccacgagg
+     2341 aacgcacctg gtatgtaggc aagatcaacc gcacccaagc tgaggaaatg ctgagtggca
+     2401 agcgggacgg taccttcctc atccgtgaga gcagccagcg gggttgctac gcctgttctg
+     2461 tggtggtgga cggggatacc aagcactgcg tcatctaccg cacggccacc ggcttcggct
+     2521 tcgcggagcc ctacaacctg tacgggtccc tgaaggagct cgtcctccac taccagcacg
+     2581 cctcgctggt gcagcacaac gacgcgctga ccgtcacgct cgcccacccc gtgcgcgccc
+     2641 ccggccctgg gcccccgccg gctgcgcgct gagcaggcgc gccccccggg cctgggcccc
+     2701 agcggctggg cccagagcgg agccgctgca tctggagtct gtctgtctaa tctgtctctt
+     2761 ccttgggtct cctccgcctg tctcttcttt gtgaatctct caaggtgtat ctgtttttct
+     2821 cttcctctct ccgcagttct gtctgtctct ctgtgtctgc ctctctctcc atctttctct
+     2881 gagtctcttt ctgtcccctg ctgtcactct gtctctttct agctccatct gtccgtcccc
+     2941 cctccctccc cgtctctgtg tatccgtgtt gggggtcccg cctccccaac tccacagccc
+     3001 ttgcccccac aatcactgcc ctccaacggc tctggccacc cacaaccttg tgccctgtcc
+     3061 cccacgggcc tccgggggtc cccagagccc cacctggctg cacctgccgt gtttacagag
+     3121 gcccctgggc tgcgtggccc ccgcctgggt gcccccattt ttaagccata gacctggggt
+     3181 cagggcagga aggaacttcg cttggccact tccaagaacc tcagccgtga cgtttggggc
+     3241 caggcgggac ctgccccata gaccccaact tccccttcaa accctgaagt gaaacccggc
+     3301 cccgggttgt ccccaccttg gggctgctgc caagaagtac ccctgaaaaa gaaaataatt
+     3361 aaaaataaac tcacaggctg accccaggcc tcccaggaac tgaggccacc agcacctccg
+     3421 ggcagccggc acataacggt gccagcaccc tagtcaacgc agactcaagg cttctccatc
+     3481 atgttgggct ctggtttcat tttccctcaa gtgtacctaa agccctcttt tctctcctct
+     3541 tttgggacga gagccctgat tttctatgcc acccacggac cccacccccc ttttcctgcc
+     3601 tgtctggcta ggctggcagg agggttttgt atggtacgtt gatactgata atggatataa
+     3661 aacattgaac tcgaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaa
+//
+

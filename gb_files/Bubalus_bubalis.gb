@@ -1,0 +1,46 @@
+LOCUS       Y14017                   324 bp    mRNA    linear   MAM 24-JUL-2016
+DEFINITION  Bubalus bubalis mRNA for insulin receptor, partial.
+ACCESSION   Y14017
+VERSION     Y14017.1
+KEYWORDS    insulin receptor.
+SOURCE      Bubalus bubalis (water buffalo)
+  ORGANISM  Bubalus bubalis
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Artiodactyla; Ruminantia;
+            Pecora; Bovidae; Bovinae; Bubalus.
+REFERENCE   1
+  AUTHORS   Kaur,G., Patil,S. and Totey,S.M.
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 324)
+  AUTHORS   Patil,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-JUN-1997) S. Patil, National Institute of Immunology,
+            Aruna Asaf Ali Marg, JNU Campus, New Delhi-110067, INDIA
+FEATURES             Location/Qualifiers
+     source          1..324
+                     /organism="Bubalus bubalis"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:89462"
+                     /cell_type="epithelial"
+                     /tissue_type="oviduct"
+     CDS             <1..>324
+                     /codon_start=1
+                     /product="insulin receptor"
+                     /protein_id="CAA74340.1"
+                     /db_xref="GOA:O18940"
+                     /db_xref="HSSP:1P14"
+                     /db_xref="InterPro:IPR020685"
+                     /db_xref="InterPro:IPR020710"
+                     /db_xref="UniProtKB/TrEMBL:O18940"
+                     /translation="VTDFMRMCWQFNPKMRPTFLEIVDLLKDDLHPSFPEVSFFHSEE
+                     NKAPESEELEMEFEDMESVPLDRSSHVQREEAGGRDRGSALGLKRNYDEHIPYTHMNG
+                     GKKNGR"
+ORIGIN      
+        1 gtcactgact tcatgcgcat gtgctggcag ttcaacccca agatgcgtcc aaccttcctg
+       61 gagatcgtgg acctgctcaa ggacgacctg caccccagct ttcccgaagt gtccttcttc
+      121 cacagcgagg agaacaaggc gcccgagagc gaggagctgg aaatggagtt tgaggacatg
+      181 gagagcgtgc ccctggaccg gtcctcgcac gtgcagagag aggaggccgg gggccgggat
+      241 cgagggtcgg cgctggggct aaagcgaaac tatgacgagc acatccccta cacccacatg
+      301 aacggaggca agaaaaacgg gcgg
+//
+
