@@ -210,10 +210,6 @@ if this_module == main_module:
 
     ### LIST OF TERMS ###
 
-    #list_of_terms = ['Rabies lyssavirus isolate 18018LIB, complete genome','ebolavirus, complete genome','Marburg marburgvirus isolate MARV001, complete genome','Nipah virus, complete genome','Variola virus[ORGN]', 'TREPONEMA PALLIDUM TRIPLET ','Kyasanur forest disease virus isolate W6204 NS5 gene, partial cds','Hepatitis B virus isolate I172, complete genome','Human rhinovirus B strain KR2629 polyprotein gene, partial cds','Adenovirus type 2, complete genome']
-
-    #work list_of_terms = ['Homo sapiens insulin (INS) gene, complete cds','Octodon degus insulin mRNA, complete cds','Aplysia californica insulin precursor (PIN), mRNA']
-
     list_of_terms = ['Homo sapiens insulin receptor (INSR) gene, complete cds','Macaca mulatta insulin receptor mRNA, partial cds, exons 9 - 12',
                      'Ovis aries partial mRNA for insulin receptor (ir gene)','Bos taurus partial mRNA for insulin receptor',
                      'Bubalus bubalis mRNA for insulin receptor, partial','Rattus norvegicus insulin receptor gene, partial exon 18, exon 19 and partial cds',
