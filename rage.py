@@ -9,11 +9,12 @@ import glob
 import utils
 from Bio.Entrez.Parser import DictionaryElement, ListElement
 import utils
-
+import pandas as pd
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 from Bio.Entrez.Parser import DictionaryElement, ListElement
 from Bio.SeqIO.InsdcIO import GenBankIterator
+from Bio import pairwise2
 
 
 Entrez.email = 'carde602@gmail.com'
@@ -97,7 +98,57 @@ def rename_files_gb(list_of_gb):
                             pat_name = re.compile(reg_name)
                             file_name = pat_name.search(file).group(1)
                             new_file_name = os.path.dirname(file) + '/' + name + os.path.splitext(file_name)[1]
-                            os.rename(file, new_file_name)
+                            if file != new_file_name:
+                                os.rename(file, new_file_name)
+                            else:
+                                print(f'The file {new_file_name} have the good name')
+
+def get_dict_of_cds(gb_files):
+        """
+        Get the dict of cds from a list of genbank files
+        Input: gb_files: list (list of genbank files)
+        Output: cds_dict: dict (dict of cds)
+        """
+        list_of_gb = get_files_in_dir(gb_files)
+        print(list_of_gb)
+        cds_list = []
+        cds_dict = {}
+        for file in list_of_gb:
+            record_iter: GenBankIterator = SeqIO.parse(file, 'gb')
+            for record in record_iter:
+                if record.features:
+                    list_of_cds_seq = []
+                    for feature in record.features:
+                        if feature.type == "source":
+                            name_list = feature.qualifiers["organism"]
+                            name = name_list[0]
+                            reg_white_space = r'\s'
+                            pat_white_space = re.compile(reg_white_space)
+                            name = pat_white_space.sub('_', name)
+                        if feature.type == "CDS":
+                            cds = feature.qualifiers["translation"]
+                            list_of_cds_seq.append(cds)
+                    print(f'{name} have: {len(list_of_cds_seq)} CDS')
+                    cds_list.append(list_of_cds_seq[0])
+                    list_elem_one = list_of_cds_seq[0]
+                    cds = list_elem_one[0]
+                    cds_dict[name] = cds
+        return cds_dict
+
+def get_accession_number(gb_files):
+    """
+    get the accession number from a list of genbank files
+    input: gb_files: list (list of genbank files)
+    output: accession_numbers_list: list (list of accession numbers)
+    """
+    list_of_gb = get_files_in_dir(gb_files)
+    accesion_numbers_list = []
+    for file in list_of_gb:
+        record_iter: GenBankIterator = SeqIO.parse(file, 'gb')
+        for record in record_iter:
+            if record.name:
+                accesion_numbers_list.append(record.name)
+    return accesion_numbers_list
 
 # def rename_files(directory_path):
 #     list_of_files = get_files_in_dir(directory_path)
@@ -114,37 +165,136 @@ main_module: str = "__main__"
 
 if this_module == main_module:
 
-    list_of_terms = ['Rabies lyssavirus isolate 18018LIB, complete genome','ebolavirus, complete genome','Marburg marburgvirus isolate MARV001, complete genome','Nipah virus, complete genome','Variola virus[ORGN]', 'TREPONEMA PALLIDUM TRIPLET ','Method of Immunization against the 4 serotypes of Dengue fever','Kyasanur forest disease virus isolate W6204 NS5 gene, partial cds']
-    
+    ### LIST OF TERMS ###
+
+    list_of_terms = ['Rabies lyssavirus isolate 18018LIB, complete genome','ebolavirus, complete genome','Marburg marburgvirus isolate MARV001, complete genome','Nipah virus, complete genome','Variola virus[ORGN]', 'TREPONEMA PALLIDUM TRIPLET ','Kyasanur forest disease virus isolate W6204 NS5 gene, partial cds','Hepatitis B virus isolate I172, complete genome','Human rhinovirus B strain KR2629 polyprotein gene, partial cds','Adenovirus type 2, complete genome']
+
+    ### PATH OF THE FOLDER THAT CONTAINS THE XML FILES AND THE GB FILES ###
+
     data_to_count = '/bio/practica_2/data/*' 
     gb_files_to_count = 'practica_2/gb_files/*'
     data = '/bio/practica_2/data'
     gb_files = 'practica_2/gb_files'
+
+    ### COUNT THE NUMBER OF XML FILES AND GB FILES ###
+
     num_of_xml_files_before_search_in_ncbi = count_files(data_to_count)
     num_of_gb_files_before_search_in_ncbi = count_files(gb_files_to_count)
 
+    ### INFORMS THE USER THE NNUMBER OF XML FILES AND GB FILES ###
 
     print(num_of_xml_files_before_search_in_ncbi)
     print(num_of_gb_files_before_search_in_ncbi)
+
+    ### IF THE USER DON'T HAVE THE XML FILES THAT HE WANTS THE FUNCTION IS EXECUTED ###
 
     if num_of_xml_files_before_search_in_ncbi == 0:
         get_xml_from_ncbi(list_of_terms)
         print('excecuted: get_xml_from_ncbi')
 
-    if num_of_xml_files_before_search_in_ncbi > 0:
+    ### IF THE USER DON'T HAVE THE GB FILES THAT HE WANTS THE THE FUNCTIONS ARE EXECUTED ###
+
+    if num_of_gb_files_before_search_in_ncbi == 0:
         list_of_xml = get_files_in_dir(data)
         id_list = get_id_list(list_of_xml)
         print(id_list)
         get_gb_files(id_list)
         print('excecuted: get_gb_files')
-
-
-    if num_of_gb_files_before_search_in_ncbi > 0:
         list_of_gb = get_files_in_dir(gb_files)
         rename_files_gb(list_of_gb)
         print('excecuted: rename_files_gb')
+
+    ### THE USER GETS A PANDAS DATAFRAME WITH THE INFORMATION OF THE GENBANK FILES ###
+
+    if num_of_gb_files_before_search_in_ncbi != 0:
+        cds_dict = get_dict_of_cds(gb_files)
+        accesion_numbers = get_accession_number(gb_files)
+        results = pd.DataFrame()
+        results['virus'] = list(cds_dict.keys())
+        results['accession_number'] = accesion_numbers 
+        print(results)
+
+
+
+    # print(cds_dict.keys)
+    # for key in cds_dict.keys():
+    #     print(key)
+    # list_of_gb = get_files_in_dir(gb_files)
+    # for file in list_of_gb:
+    #     record_iter: GenBankIterator = SeqIO.parse(file, 'gb')
+    #     for record in record_iter:
+    #         if record.name:
+    #             print(record.name)
+
+
+
+
+
+
+#############################old get dic of cds#############################
+        # print(cds_dict)
+        # list_of_gb = get_files_in_dir(gb_files)
+        # cds_list = []
+        # cds_dict = {}
+        # for file in list_of_gb:
+        #     record_iter: GenBankIterator = SeqIO.parse(file, 'gb')
+        #     for record in record_iter:
+        #         if record.features:
+        #             list_of_cds_seq = []
+        #             for feature in record.features:
+        #                 if feature.type == "source":
+        #                     name_list = feature.qualifiers["organism"]
+        #                     name = name_list[0]
+        #                     reg_white_space = r'\s'
+        #                     pat_white_space = re.compile(reg_white_space)
+        #                     name = pat_white_space.sub('_', name)
+        #                 if feature.type == "CDS":
+        #                         # print(feature.location)
+        #                         # print(feature.qualifiers["protein_id"])
+        #                         # print(feature.location.extract(record).seq)
+        #                         # list_of_cds_seq = []
+        #                     cds = feature.qualifiers["translation"]
+        #                     list_of_cds_seq.append(cds)
+        #                     # cds_list.append(cds)
+        #             print(f'{name} have: {len(list_of_cds_seq)} CDS')
+        #             cds_list.append(list_of_cds_seq[0])
+        #             list_elem_one = list_of_cds_seq[0]
+        #             cds = list_elem_one[0]
+        #             cds_dict[name] = cds
+        #             return cds_dict
+        # print(cds_list)
+        # print(len(cds_list))
+        # print(len(cds_dict))
+
+
+
+
+
+
+    # if num_of_gb_files_before_search_in_ncbi > 0:
+        # list_of_gb = get_files_in_dir(gb_files)
+        # rename_files_gb(list_of_gb)
+        # print('excecuted: rename_files_gb')
+
+    # list_of_gb = get_files_in_dir(gb_files)
+    # for file in list_of_gb:
+    #     cds_list = []
+    #     record_iter: GenBankIterator = SeqIO.parse(file, 'gb')
+    #     for record in record_iter:
+    #         if record.features:
+    #             for feature in record.features:
+    #                 if feature.type == "CDS":
+    #                     cds = feature.qualifiers["translation"][0]
+    #                     cds_list.append(cds)
+    # print(cds_list)
+
     
 
+    
+
+
+
+ 
     # GET NAME OF THE ORGANISM
     # for rec in SeqIO.parse('/bio/practica_2/gb_files/EU293337.1.gb','gb'):
     #     if rec.features:
