@@ -15,7 +15,10 @@ from Bio.SeqRecord import SeqRecord
 from Bio.Entrez.Parser import DictionaryElement, ListElement
 from Bio.SeqIO.InsdcIO import GenBankIterator
 from Bio import pairwise2
-
+from Bio.Seq        import Seq
+from Bio.SeqFeature import SeqFeature
+from Bio.Align      import PairwiseAligner, PairwiseAlignments, PairwiseAlignment, substitution_matrices
+from Bio.Align.substitution_matrices import Array
 
 Entrez.email = 'carde602@gmail.com'
 
@@ -150,6 +153,27 @@ def get_accession_number(gb_files):
                 accesion_numbers_list.append(record.name)
     return accesion_numbers_list
 
+def get_alinaments_with_specific_virus(virus_to_compare,virus_list_to_compare):
+    list_of_scores = []
+    for virus in virus_list_to_compare:
+        aligner = PairwiseAligner()
+        score = aligner.score(virus_to_compare,virus)
+        list_of_scores.append(score)
+        print(f'socre: {score} comparing {virus} with {virus_to_compare}')
+    return list_of_scores
+
+def get_list_of_virus_to_compare(key_virus_good,complete_dict_of_virus_to_compare):
+    print(len(list(complete_dict_of_virus_to_compare.values())))
+    new_dict = complete_dict_of_virus_to_compare
+    del new_dict[key_virus_good]
+    list_virus_to_compare = list(new_dict.values())
+    print(len(list_virus_to_compare))
+    return list_virus_to_compare
+#    pass
+
+def get_alinaments_with_specific_virus_with_dict(virus_to_compare,virus_dict_to_compare):
+    pass
+
 # def rename_files(directory_path):
 #     list_of_files = get_files_in_dir(directory_path)
 #     list_of_parser_files = []
@@ -215,6 +239,46 @@ if this_module == main_module:
         print(results)
 
 
+
+
+    good_virus = 'Rhinovirus_B'
+
+    # print(len(list(cds_dict.values())))
+
+    # if good_virus in list(cds_dict.values()):
+    #     dict_without_good_virus = cds_dict
+    #     del dict_without_good_virus["Rhinovirus_B"]
+    #     print(len(dict_without_good_virus))
+    #     print(type(dict_without_good_virus))
+
+
+    #list_without_good_virus = list(dict_without_good_virus.values())
+    #print(list_without_good_virus)
+
+
+
+
+
+    # good_virus = 'Rhinovirus_B'
+    good_list = get_list_of_virus_to_compare(good_virus,cds_dict)
+
+    # print(type(good_list))
+    # print(len(good_list))
+
+    #get_alinaments_with_specific_virus(good_virus,list_without_good_virus)
+    
+    
+        # for value in list_without_good_virus:
+    #     pass
+    # for cds in cds_dict:
+    
+    
+    # aligner = PairwiseAligner()
+    # score = aligner.score(good_virus,list_without_good_virus['Nipah_henipavirus'])
+    # print(f'socre: {score}')
+    # alignment: PairwiseAlignment
+    # for alignment in alignments:
+    #     print(alignment)
 
     # print(cds_dict.keys)
     # for key in cds_dict.keys():
