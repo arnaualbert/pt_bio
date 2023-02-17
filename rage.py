@@ -162,17 +162,33 @@ def get_alinaments_with_specific_virus(virus_to_compare,virus_list_to_compare):
         print(f'socre: {score} comparing {virus} with {virus_to_compare}')
     return list_of_scores
 
+# def get_list_of_virus_to_compare(key_virus_good,complete_dict_of_virus_to_compare):
+#     print(len(list(complete_dict_of_virus_to_compare.values())))
+#     new_dict = complete_dict_of_virus_to_compare
+#     del new_dict[key_virus_good]
+#     list_virus_to_compare = list(new_dict.values())
+#     print(len(list_virus_to_compare))
+#     return list_virus_to_compare
+#    pass
 def get_list_of_virus_to_compare(key_virus_good,complete_dict_of_virus_to_compare):
     print(len(list(complete_dict_of_virus_to_compare.values())))
     new_dict = complete_dict_of_virus_to_compare
     del new_dict[key_virus_good]
-    list_virus_to_compare = list(new_dict.values())
+    list_virus_to_compare = new_dict
     print(len(list_virus_to_compare))
     return list_virus_to_compare
-#    pass
 
 def get_alinaments_with_specific_virus_with_dict(virus_to_compare,virus_dict_to_compare):
-    pass
+    #list_of_scores = []
+    list_of_socres = {}
+    list_of_names_of_virus = list(virus_dict_to_compare.keys())
+    list_of_cds_to_compare = list(virus_dict_to_compare.values())
+    for index, name in enumerate(list_of_names_of_virus):
+        print(f'comparing {name} with {list_of_cds_to_compare[index]}')
+        aligner = PairwiseAligner()
+        score = aligner.score(virus_to_compare,list_of_cds_to_compare[index])
+        list_of_socres[name] = score
+    return list_of_socres
 
 # def rename_files(directory_path):
 #     list_of_files = get_files_in_dir(directory_path)
@@ -242,7 +258,7 @@ if this_module == main_module:
 
 
     good_virus = 'Rhinovirus_B'
-
+    cds_virus = cds_dict['Rhinovirus_B']
     # print(len(list(cds_dict.values())))
 
     # if good_virus in list(cds_dict.values()):
@@ -261,7 +277,8 @@ if this_module == main_module:
 
     # good_virus = 'Rhinovirus_B'
     good_list = get_list_of_virus_to_compare(good_virus,cds_dict)
-
+    socores = get_alinaments_with_specific_virus_with_dict(cds_virus,good_list)
+    print(socores)
     # print(type(good_list))
     # print(len(good_list))
 
