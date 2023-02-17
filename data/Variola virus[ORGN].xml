@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSearchResult PUBLIC "-//NLM//DTD esearch 20060628//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20060628/esearch.dtd">
+<eSearchResult><Count>439</Count><RetMax>1</RetMax><RetStart>0</RetStart><IdList>
+<Id>NC_001611.1</Id>
+</IdList><TranslationSet><Translation>     <From>Variola virus[ORGN]</From>     <To>"Variola virus"[Organism]</To>    </Translation></TranslationSet><TranslationStack>   <TermSet>    <Term>"Variola virus"[Organism]</Term>    <Field>Organism</Field>    <Count>439</Count>    <Explode>Y</Explode>   </TermSet>   <OP>GROUP</OP>  </TranslationStack><QueryTranslation>"Variola virus"[Organism]</QueryTranslation></eSearchResult>

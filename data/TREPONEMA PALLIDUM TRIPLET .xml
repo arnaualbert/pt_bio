@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSearchResult PUBLIC "-//NLM//DTD esearch 20060628//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20060628/esearch.dtd">
+<eSearchResult><Count>157</Count><RetMax>1</RetMax><RetStart>0</RetStart><IdList>
+<Id>LR963141.1</Id>
+</IdList><TranslationSet><Translation>     <From>TREPONEMA PALLIDUM</From>     <To>"Treponema pallidum"[Organism] OR TREPONEMA PALLIDUM[All Fields]</To>    </Translation></TranslationSet><TranslationStack>   <TermSet>    <Term>"Treponema pallidum"[Organism]</Term>    <Field>Organism</Field>    <Count>5786</Count>    <Explode>Y</Explode>   </TermSet>   <TermSet>    <Term>TREPONEMA PALLIDUM[All Fields]</Term>    <Field>All Fields</Field>    <Count>6319</Count>    <Explode>N</Explode>   </TermSet>   <OP>OR</OP>   <OP>GROUP</OP>   <TermSet>    <Term>TRIPLET[All Fields]</Term>    <Field>All Fields</Field>    <Count>13170</Count>    <Explode>N</Explode>   </TermSet>   <OP>AND</OP>   <OP>GROUP</OP>  </TranslationStack><QueryTranslation>("Treponema pallidum"[Organism] OR TREPONEMA PALLIDUM[All Fields]) AND TRIPLET[All Fields]</QueryTranslation></eSearchResult>
