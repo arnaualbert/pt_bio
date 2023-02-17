@@ -154,6 +154,12 @@ def get_accession_number(gb_files):
     return accesion_numbers_list
 
 def get_alinaments_with_specific_virus(virus_to_compare,virus_list_to_compare):
+    """
+    get alignments with specific virus
+    input: virus_to_compare: str (virus to compare)
+    input: virus_list_to_compare: list (list of virus to compare)
+    output: list_of_scores: list (list of scores)
+    """
     list_of_scores = []
     for virus in virus_list_to_compare:
         aligner = PairwiseAligner()
@@ -162,6 +168,12 @@ def get_alinaments_with_specific_virus(virus_to_compare,virus_list_to_compare):
     return list_of_scores
 
 def get_list_of_virus_to_compare(key_virus_good,complete_dict_of_virus_to_compare):
+    """
+    get the list of virus to compare
+    input: key_virus_good: str (virus to compare)
+    input: complete_dict_of_virus_to_compare: dict (dict of virus to compare)
+    output: list_of_virus_to_compare: list (list of virus to compare)
+    """
     print(len(list(complete_dict_of_virus_to_compare.values())))
     new_dict = complete_dict_of_virus_to_compare
     del new_dict[key_virus_good]
@@ -187,6 +199,11 @@ def get_alinaments_with_specific_virus_with_dict(virus_to_compare: str ,virus_di
     return list_of_socres
 
 def get_percentage(dict_of_scores):
+    """
+    get the percentage of the scores
+    input: dict_of_scores: dict (dict of scores)
+    output: list_percentage: list (list of percentages)
+    """
     scores = list(dict_of_scores.values())
     max_value = max(scores)
     list_percentage = []
